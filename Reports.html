@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Avance Technologies Limited</title>
+<!-- Stylesheets -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/meanmenu.min.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/AVANCE_LOGO.png?v=1743420448" type="image/x-icon">
+<link rel="icon" href="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/AVANCE_LOGO.png?v=1743420448" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<style>
+    /* Additional styles for the accordion */
+    .accordion-header {
+        cursor: pointer;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+    
+    .accordion-header:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .accordion-content {
+        display: none;
+        padding: 20px;
+        border: 1px solid #eaeaea;
+        border-top: none;
+        background-color: #ffffff;
+		font-size:24px !important;
+		
+    }
+    
+    .pdf-container {
+        height: 500px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .pdf-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    /* New styles for sub-headings */
+    .sub-heading {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #333;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 10px;
+    }
+    
+    .pdf-list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .pdf-list li {
+        margin-bottom: 10px;
+    }
+    
+    .pdf-list li a {
+        display: flex;
+        align-items: center;
+        color: #0066cc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .pdf-list li a:hover {
+        color: #004499;
+    }
+    
+    .pdf-list li a i {
+        margin-right: 10px;
+        color: #e74c3c;
+        font-size: 18px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+	
+	<!-- Cursor -->
+	<div class="cursor"></div>
+	<div class="cursor-follower"></div>
+	<!-- Cursor End -->
+ 	
+	<!-- Preloader -->
+	<div class="loader-wrap">
+		<div class="preloader">
+			<div class="preloader-close">x</div>
+			<div id="handle-preloader" class="handle-preloader">
+				<div class="animation-preloader">
+					<div class="txt-loading">
+						<span data-text-preloader="A" class="letters-loading">A</span>
+						<span data-text-preloader="V" class="letters-loading">V</span>
+						<span data-text-preloader="A" class="letters-loading">A</span>			
+						<span data-text-preloader="N" class="letters-loading">N</span>
+						<span data-text-preloader="C" class="letters-loading">C</span>
+						<span data-text-preloader="E" class="letters-loading">E</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+	
+	<!-- Main Header -->
+	<header class="main-header header-style-one">
+		
+		<!-- Header Lower -->
+		<div class="header-lower">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="d-flex justify-content-between align-items-center flex-wrap">
+						
+						<div class="logo-box">
+							<div class="logo"><a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/AVANCE_LOGO.png?v=1743420448" alt="" title="" style="width: 173px; height: 70px;"></a></div>
+						</div>
+						
+						<div class="nav-outer d-flex flex-wrap">
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-md">
+								<div class="navbar-header">
+									<!-- Toggle Button -->    	
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+										<li ><a href="index.html">Home</a>
+											<!-- <ul>
+												<li><a href="index.html">HomePage 01</a></li>
+												<li><a href="index-2.html">HomePage 02</a></li>
+												<li><a href="index-3.html">HomePage 03</a></li>
+												<li class="dropdown"><a href="#">Header Style</a>
+													<ul>
+														<li><a href="index.html">Header 01</a></li>
+														<li><a href="index-2.html">Header 02</a></li>
+														<li><a href="index-3.html">Header 03</a></li>
+													</ul>
+												</li>
+											</ul> -->
+										</li>
+										<li><a href="about.html">About</a></li>
+										<li ><a href="register.html">Careers</a>
+											<ul>
+												<!-- <li><a href="faq.html">Faq</a></li>
+												<li><a href="pricing.html">Price</a></li>
+												<li><a href="testimonial.html">Testimonial</a></li>
+												<li><a href="login.html">Login</a></li> -->
+												<!-- <li><a href="register.html">Register</a></li> -->
+												<!-- <li><a href="reset.html">Forgot password</a></li>
+												<li class="dropdown"><a href="#">Team</a> -->
+													<!-- <ul>
+														<li><a href="team.html">Team</a></li>
+														<li><a href="team-detail.html">Team detail</a></li>
+													</ul> -->
+												</li>
+											</ul>
+										</li>
+										<li ><a href="services.html">Services</a>
+											<!-- <ul>
+												<li><a href="services.html">Services</a></li>
+												<li><a href="service-detail.html">Services detail</a></li>
+											</ul> -->
+										</li>
+										<li class="dropdown"><a href="#">Investor Relation</a>
+											<ul>
+												<li><a href="blog.html">Management Team</a></li>
+												<li><a href="Reports.html">Reports</a></li>
+                                                
+												<!-- <li><a href="news-detail.html">Blog detail</a></li> -->
+											</ul>
+										</li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+
+						<!-- Main Menu End-->
+						<div class="outer-box d-flex align-items-center flex-wrap">
+
+							<!-- Language DropDown -->
+							<!-- <div class="language-dropdown">
+								<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="flag"><img src="assets/images/icons/flag.png" alt="" /></span> <span class="fa-solid fa-angle-down fa-fw"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+									<li><a class="dropdown-item" href="#"><span class="flag"><img src="assets/images/icons/flag.png" alt="" /></span> English</a></li>
+									<li><a class="dropdown-item" href="#"><span class="flag"><img src="assets/images/icons/arabic.png" alt="" /></span> Arbic</a></li>
+									<li><a class="dropdown-item" href="#"><span class="flag"><img src="assets/images/icons/germany.png" alt="" /></span> German</a></li>
+									<li><a class="dropdown-item" href="#"><span class="flag"><img src="assets/images/icons/france.png" alt="" /></span> French</a></li>
+								</ul>
+							</div> -->
+
+							<!-- Button Box -->
+							<!-- <div class="main-header_buttons">
+								<a href="#" class="template-btn btn-style-two">
+									<span class="btn-wrap">
+										<span class="text-one">Login</span>
+										<span class="text-two">Login</span>
+									</span>
+								</a>
+								<a href="#" class="template-btn btn-style-one">
+									<span class="btn-wrap">
+										<span class="text-one">Join now</span>
+										<span class="text-two">Join now</span>
+									</span>
+								</a>
+							</div> -->
+
+							<!-- Mobile Navigation Toggler -->
+							<div class="mobile-nav-toggler">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+							</div>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Header Lower-->
+		
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<div class="close-btn"><span class="icon fa-solid fa-xmark fa-fw"></span></div>
+			
+			<nav class="menu-box">
+				<div class="nav-logo"><a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/AVANCE_LOGO.png?v=1743420448" alt="" title="" style="width: 173px; height: 70px;"></a></div>
+				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+			</nav>
+		</div>
+		<!-- End Mobile Menu -->
+	
+	</header>
+	<!-- End Main Header -->
+	
+	<!-- Page Title -->
+    <section class="page-title">
+		<div class="page-title-icon" style="background-image:url(assets/images/icons/page-title_icon-1.png)"></div>
+		<div class="page-title-icon-two" style="background-image:url(assets/images/icons/page-title_icon-2.png)"></div>
+		<div class="page-title-shadow" style="background-image:url(assets/images/background/page-title-1.png)"></div>
+		<div class="page-title-shadow_two" style="background-image:url(assets/images/background/page-title-2.png)"></div>
+        <div class="auto-container">
+			<h2>Reports</h2>
+			<ul class="bread-crumb clearfix">
+				<li><a href="index.html">Home</a></li>
+				<li>Reports</li>
+			</ul>
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+	<!-- Investor PDFs Section -->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				<!-- Content Side -->
+                <div class="content-side col-lg-12 col-md-12 col-sm-12">
+					<div class="blog-classic">
+                        <h2 class="mb-4">Investor Documents</h2>
+                        <div class="accordion-container" id="investor-accordion">
+                            <!-- Accordion items will be generated here by JavaScript -->
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Investor PDFs Section -->
+
+	
+
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		<div class="footer_pattern" style="background-image: url(assets/images/background/footer-pattern.png)"></div>
+		<div class="auto-container">
+			<div class="inner-container">
+				<!-- Widgets Section -->
+				<div class="widgets-section">
+					<div class="row clearfix">
+						
+						<!-- Big Column -->
+						<div class="big-column col-lg-5 col-md-12 col-sm-12">
+							<div class="footer-newsletter">
+								<h5 class="footer-title">Newsletter</h5>
+								<!-- <div class="footer-newsletter_text">Lorem ipsum dolor sit amet consectetur adipiscing vitae mattis tellus. Nullam quis mattis.</div> -->
+								<div class="newsletter-box">
+									<form method="post" action="contact.html">
+										<div class="form-group">
+											<span class="icon fa-regular fa-envelope fa-fw"></span>
+											<input type="email" name="search-field" value="" placeholder="Enter your mail" required>
+											<button type="submit" class="template-btn btn-style-one">
+												<span class="btn-wrap">
+													<span class="text-one">Subscribe</span>
+													<span class="text-two">Subscribe</span>
+												</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<!-- Big Column -->
+						<div class="big-column col-lg-7 col-md-12 col-sm-12">
+							<div class="footer-lists_outer">
+								<div class="row clearfix">
+									<!-- Column -->
+									<div class="column col-lg-5 col-md-4 col-sm-6">
+										<h5 class="footer-title">Services</h5>
+										<ul class="footer-pages_list">
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="register.html">career</a></li>
+											<li><a href="services.html">services</a></li>
+											<li><a href="contact.html">contact</a></li>
+										</ul>
+									</div>
+									<!-- Column -->
+									<div class="column col-lg-3 col-md-4 col-sm-6">
+										<h5 class="footer-title">Investor Relation</h5>
+										<ul class="footer-pages_list">
+											<li><a href="blog.html">Management Team</a></li>
+											<li><a href="Reports.html">Reports</a></li>
+											
+											
+										</ul>
+									</div>
+									<!-- Column -->
+									<!-- <div class="column col-lg-4 col-md-4 col-sm-6">
+										<h5 class="footer-title">about us</h5>
+										<ul class="footer-pages_list">
+											<li><a href="#">Our story</a></li>
+											<li><a href="#">Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Testimonials</a></li>
+											<li><a href="#">Error 404</a></li>
+										</ul>
+									</div> -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="auto-container">
+				<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
+					<div class="footer-logo"><a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/AVANCE_LOGO.png?v=1743420448" alt="" title="" style="width: 173px; height: 70px;"></a></div>
+					<div class="footer-copyright">Copyright © 2024  <a href="index.html">Avance Technologies Limited</a> All rights reserved | CIN: L51900MH1985PLC035210 </div>
+					<!-- Social Box -->
+					<!-- <div class="footer-social_box">
+						<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Main Footer -->
+
+</div>
+<!-- End PageWrapper -->
+
+<div class="progress-wrap">
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+	</svg>
+</div>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/tilt.jquery.min.js"></script>
+<script src="assets/js/jquery.paroller.min.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/backtotop.js"></script>
+<script src="assets/js/odometer.js"></script>
+<script src="assets/js/parallax-scroll.js"></script>
+
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/ScrollToPlugin.min.js"></script>
+<script src="assets/js/ScrollSmoother.min.js"></script>
+
+<script src="assets/js/touchspin.js"></script>
+<script src="assets/js/jquery.marquee.min.js"></script>
+<script src="assets/js/magnific-popup.min.js"></script>
+<script src="assets/js/nav-tool.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/element-in-view.js"></script>
+<script src="assets/js/script.js"></script>
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+<!-- Investor Accordion Script -->
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// Data for 15 accordions with multiple PDFs in each
+		const investorData = [
+			{
+				id: 1,
+				title: "AGM Notice",
+				pdfs: [
+					{ name: "AGM Report 2023-24", url: "Agm/AGM-FY-2023-24.pdf" },
+					{ name: "AGM Report 2022-23", url: "Agm/AGM-FY-2022-23.pdf" },
+					{ name: "AGM Report 2021-22", url: "Agm/AGM-FY-2021-22.pdf" },
+					{ name: "AGM Report 2019-20", url: "Agm/AGM-FY-2019-20.pdf" },
+					{ name: "AGM Report 2018-19", url: "Agm/AGM-FY-2018-19.pdf" },
+					{ name: "AGM Report 2017-18", url: "Agm/AGM-FY-2017-18.pdf" },
+					{ name: "AGM Report 2016-17", url: "Agm/AGM-FY-2016-17.pdf" }
+				]
+			},
+			{
+				id: 2,
+				title: "Annual Report",
+				pdfs: [
+					{ name: "Annual Report 2023-24", url: "Annual/AR-FY-2023-24.pdf" },
+					{ name: "Annual Report 2022-23", url: "Annual/AR-FY-2022-23.pdf" },
+					{ name: "Annual Report 2021-22", url: "Annual/AR-FY-2021-22.pdf" },
+					{ name: "Annual Report 2020-21", url: "Annual/AR-FY-2020-21.pdf" },
+					{ name: "Annual Report 219-20", url: "Annual/AR-FY-2019-20.pdf" },
+					{ name: "Annual Report 2018-19", url: "Annual/AR-FY-2018-19.pdf" },
+					{ name: "Annual Report 2017-18", url: "Annual/AR-FY-2017-18.pdf" },
+					{ name: "Annual Report 2016-17", url: "Annual/AR-FY-2016-17.pdf" }
+				]
+			},
+			{
+				id: 3,
+				title: "BM Intimation",
+				sections: [
+					{
+						heading: "2024-2025",
+						pdfs: [
+							{ name: "Intimation-of-BM-qtr-31.12.2024", url: "BM/Intimation-of-BM-qtr-31.12.2024.pdf" },
+							{ name: "Intimation-of-BM-qtr-30.09.2024", url: "BM/Intimation-of-BM-qtr-30.09.2024.pdf" },
+							{ name: "Intimation-of-BM-qtr-30.06.2024", url: "BM/Intimation-of-BM-qtr-30.06.2024.pdf" },
+						]
+					},
+					{
+						heading: "2023-2024",
+						pdfs: [
+							{ name: "Intimation-of-BM-17.02.2024.pdf", url: "BM/Intimation-of-BM-17.02.2024.pdf" },
+							{ name: "Intimation-of-BM-25.09.2023.pdf", url: "BM/Intimation-of-BM-25.09.2023.pdf" },
+							{ name: "Intimation-of-BM-28.05.2024.pdf", url: "BM/Intimation-of-BM-28.05.2024.pdf" },
+							{ name: "Intimation-of-BM-30.05.2023.pdf", url: "BM/Intimation-of-BM-30.05.2023.pdf" },
+							{ name: "Intimation-of-BM-30.06.2023.pdf", url: "BM/Intimation-of-BM-30.06.2023.pdf" },
+							{ name: "Intimation-of-BM-30.09.2023.pdf", url: "BM/Intimation-of-BM-30.09.2023.pdf" },
+							{ name: "Intimation-of-BM-31.12.2023.pdf", url: "BM/Intimation-of-BM-31.12.2023.pdf" },
+							{ name: "Intimation-of-BM-Qtr-30.06.2024.pdf", url: "BM/Intimation-of-BM-Qtr-30.06.2024.pdf" },
+							{ name: "Intimation-of-BM-Qtr-30.09.2024.pdf", url: "BM/Intimation-of-BM-Qtr-30.09.2024.pdf" },
+							{ name: "Intimation-of-BM-Qtr-31.12.2024.pdf", url: "BM/Intimation-of-BM-Qtr-31.12.2024.pdf" },
+							{ name: "Intimation-of-BM-scheduled-on-04th-November-2023.pdf", url: "BM/Intimation-of-BM-scheduled-on-04th-November-2023.pdf" },
+							{ name: "Intimation-of-BM-scheduled-on-07th-February-2024.pdf", url: "BM/Intimation-of-BM-scheduled-on-07th-February-2024.pdf" },
+							{ name: "Intimation-of -BM-scheduled-on-11th-August-2023.pdf", url: "BM/Intimation-of -BM-scheduled-on-11th-August-2023.pdf" },
+							{ name: "Intimation-of-BM-scheduled-on-17th-February-2024.pdf", url: "BM/Intimation-of-BM-scheduled-on-17th-February-2024.pdf" },
+							{ name: "Intimation-of-BM-scheduled-on-25th-Sept-2023.pdf", url: "BM/Intimation-of-BM-scheduled-on-25th-Sept-2023.pdf" },
+							{ name: "Intimation-of-BM-scheduled-on-30th-May 2023", url: "BM/Intimation of BM scheduled on 30th May 2023.pdf" },
+						]
+					},
+					{
+						heading: "2022-2023",
+						pdfs: [
+							{ name: "Intimation of BM scheduled on 11th November 2022.pdf", url: "BM/Intimation of BM scheduled on 11th November 2022.pdf" },
+							{ name: "Intimation of BM scheduled on 12th August 2022.pdf", url: "BM/Intimation of BM scheduled on 12th August 2022.pdf" },
+							{ name: "Intimation of BM scheduled on 13th February 2023.pdf", url: "BM/Intimation of BM scheduled on 13th February 2023.pdf" },
+							{ name: "Intimation of BM scheduled on 24th May 2022.pdf", url: "BM/Intimation of BM scheduled on 24th May 2022.pdf" },
+
+							{ name: "Intimation of BM 30.06.2022.pdf", url: "BM/Intimation of BM 30.06.2022.pdf" },
+							{ name: "Intimation of BM 30.09.2022.pdf", url: "BM/Intimation of BM 30.09.2022.pdf" },
+							{ name: "Intimation of BM 31.03.2023.pdf", url: "BM/Intimation of BM 31.03.2023.pdf" },
+							{ name: "Intimation of BM 31.12.2022.pdf", url: "BM/Intimation of BM 31.12.2022.pdf" },
+							{ name: "12.08.2022.pdf", url: "BM/12.08.2022.pdf" },
+							{ name: "30-09-2022 Intimation BM.pdf", url: "BM/30-09-2022 Intimation BM.pdf" },
+						]
+					},
+					{
+						heading: "2021-2022",
+						pdfs: [
+							{ name: "Intimation of BM scheduled on 30th June 2021.pdf", url: "BM/Intimation of BM scheduled on 30th June 2021.pdf" },
+							{ name: "Intimation of BM scheduled on 28th October 2021.pdf", url: "BM/Intimation of BM scheduled on 28th October 2021.pdf" },
+							{ name: "Intimation of BM scheduled on 12th August 2021.pdf", url: "BM/Intimation of BM scheduled on 12th August 2021.pdf" },
+							{ name: "Intimation of BM scheduled on 09th February 2022.pdf", url: "BM/Intimation of BM scheduled on 09th February 2022.pdf" },
+
+							{ name: "Intimation of BM 31.12.2021.pdf", url: "BM/Intimation of BM 31.12.2021.pdf" },
+							{ name: "Intimation of BM 31.03.2022.pdf", url: "BM/Intimation of BM 31.03.2022.pdf" },
+							{ name: "Intimation of BM 30.09.2021.pdf", url: "BM/Intimation of BM 30.09.2021.pdf" },
+							{ name: "24.05.2021.pdf", url: "BM/24.05.2021.pdf" },
+							
+						]
+					},
+					{
+						heading: "2020-2021",
+						pdfs: [
+							{ name: "Intimation of BM 31.12.2020.pdf", url: "BM/Intimation of BM 31.12.2020.pdf" },
+							{ name: "Intimation of BM 31.03.2021.pdf", url: "BM/Intimation of BM 31.03.2021.pdf" },
+							{ name: "Intimation of BM 30.09.2020.pdf", url: "BM/Intimation of BM 30.09.2020.pdf" },
+							{ name: "Intimation of BM 30.06.2020.pdf", url: "BM/Intimation of BM 30.06.2020.pdf" },
+
+							{ name: "14.09.2020.pdf", url: "BM/14.09.2020.pdf" },
+							{ name: "10.11.2020.pdf", url: "BM/10.11.2020.pdf" },
+							{ name: "02.02.2021.pdf", url: "BM/02.02.2021.pdf" },
+							
+							
+						]
+					},
+					{
+						heading: "2019-2020",
+						pdfs: [
+							{ name: "Intimation of BM 31.12.2019.pdf", url: "BM/Intimation of BM 31.12.2019.pdf" },
+							{ name: "Intimation of BM 31.03.2020.pdf", url: "BM/Intimation of BM 31.03.2020.pdf" },
+							{ name: "Intimation of BM 30.09.2019.pdf", url: "BM/Intimation of BM 30.09.2019.pdf" },
+							{ name: "Intimation of BM 30.06.2019.pdf", url: "BM/Intimation of BM 30.06.2019.pdf" },
+
+							{ name: "29.07.2020.pdf", url: "BM/29.07.2020.pdf" },
+							{ name: "14.11.2019.pdf", url: "BM/14.11.2019.pdf" },
+							{ name: "09.08.2019.pdf", url: "BM/09.08.2019.pdf" },
+							{ name: "07.02.2020.pdf", url: "BM/07.02.2020.pdf" },
+							
+							
+						]
+					},
+					{
+						heading: "2018-2019",
+						pdfs: [
+							{ name: "Intimation of BM 31.12.2018.pdf", url: "BM/Intimation of BM 31.12.2018.pdf" },
+							{ name: "Intimation of BM 31.03.2019.pdf", url: "BM/Intimation of BM 31.03.2019.pdf" },
+							{ name: "Intimation of BM 30.09.2018.pdf", url: "BM/Intimation of BM 30.09.2018.pdf" },
+							{ name: "Intimation of BM 30.06.2018.pdf", url: "BM/Intimation of BM 30.06.2018.pdf" },
+
+							{ name: "29.05.2019.pdf", url: "BM/29.05.2019.pdf" },
+							{ name: "14.11.2018.pdf", url: "BM/14.11.2018.pdf" },
+							{ name: "14.02.2019.pdf", url: "BM/14.02.2019.pdf" },
+							{ name: "13.08.2018.pdf", url: "BM/13.08.2018.pdf" },
+							
+							
+						]
+					},
+					{
+						heading: "2017-2018",
+						pdfs: [
+							{ name: "Intimation of BM 31.12.2017.pdf", url: "BM/Intimation of BM 31.12.2017.pdf" },
+							{ name: "Intimation of BM 31.06.2017.pdf", url: "BM/Intimation of BM 31.06.2017.pdf" },
+							{ name: "Intimation of BM 31.03.2018.pdf", url: "BM/Intimation of BM 31.03.2018.pdf" },
+							{ name: "Intimation of BM 30.09.2017.pdf", url: "BM/Intimation of BM 30.09.2017.pdf" },
+
+							{ name: "29.05.2018.pdf", url: "BM/29.05.2018.pdf" },
+							{ name: "14.11.2017.pdf", url: "BM/14.11.2017.pdf" },
+							{ name: "14.08.2017.pdf", url: "BM/14.08.2017.pdf" },
+							{ name: "13.02.2018.pdf", url: "BM/13.02.2018.pdf" },
+							
+							
+						]
+					},
+				]
+			},
+			{
+				id: 4,
+				title: "BM Outcome",
+				sections: [
+					{
+						heading: "2024-2025",
+						pdfs: [
+							{ name: "Outcome of BM 30.06.2024.pdf", url: "BMoutcome/Outcome of BM 30.06.2024.pdf" },
+							{ name: "Outcome of BM 27.03.2025.pdf", url: "BMoutcome/Outcome of BM 27.03.2025.pdf" },
+							{ name: "Outcome of BM 12.02.2025.pdf", url: "BMoutcome/Outcome of BM 12.02.2025.pdf" },
+							{ name: "Outcome of BM 03.09.2024.pdf", url: "BMoutcome/Outcome of BM 03.09.2024.pdf" },
+						]
+					},
+					{
+						heading: "2023-2024",
+						pdfs: [
+							{ name: "Outcome UFR 31st March 2023.pdf", url: "BMoutcome/Outcome UFR 31st March 2023.pdf" },
+							{ name: "Outcome of BM 07 Feb 2024.pdf", url: "BMoutcome/Outcome of BM dated 07 Feb 2024.pdf" },
+							{ name: "Outcome of BM  4th November 2023.pdf", url: "BMoutcome/Outcome of BM dated 4th November 2023.pdf" },
+							{ name: "Outcome of BM 31.12.2023- UFR.pdf", url: "BMoutcome/Outcome of BM 31.12.2023- UFR.pdf" },
+
+							{ name: "Outcome of BM 31.03.2024- AFR.pdf", url: "BMoutcome/Outcome of BM 31.03.2024- AFR.pdf" },
+							{ name: "Outcome of BM 30.09.2023- UFR.pdf", url: "BMoutcome/Outcome of BM 30.09.2023- UFR.pdf" },
+							{ name: "Outcome of BM 30.06.2023- UFR.pdf", url: "BMoutcome/Outcome of BM 30.06.2023- UFR.pdf" },
+							{ name: "Outcome of BM 25.09.2023.pdf", url: "BMoutcome/Outcome of BM 25.09.2023.pdf" },
+
+							{ name: "Outcome of BM 23.02.2024.pdf", url: "BMoutcome/Outcome of BM 23.02.2024.pdf" },
+							{ name: "Outcome of BM 17.02.2024.pdf", url: "BMoutcome/Outcome of BM 17.02.2024.pdf" },
+							{ name: "Outcome of BM 04.09.2023 (AGM Notice).pdf", url: "BMoutcome/Outcome of BM 04.09.2023 (AGM Notice).pdf" },
+						]
+					},
+
+					{
+						heading: "2022-2023",
+						pdfs: [
+							{ name: "Outcome of BM dated 28th May 2022.pdf", url: "BMoutcome/Outcome of BM dated 28th May 2022.pdf" },
+							{ name: "Outcome of BM dated 21st June  2022.pdf", url: "BMoutcome/Outcome of BM dated 21st June  2022.pdf" },
+							{ name: "Outcome of BM dated 13th February 2023.pdf", url: "BMoutcome/Outcome of BM dated 13th February 2023.pdf" },
+							{ name: "Outcome of BM dated 12th August 2022.pdf", url: "BMoutcome/Outcome of BM dated 12th August 2022.pdf" },
+
+							{ name: "Outcome of BM dated 11th November 2022.pdf", url: "BMoutcome/Outcome of BM dated 11th November 2022.pdf" },
+							{ name: "Outcome of BM dated 09th June 2022.pdf", url: "BMoutcome/Outcome of BM dated 09th June 2022.pdf" },
+							{ name: "Outcome of BM dated 05th September 2022.pdf", url: "BMoutcome/Outcome of BM dated 05th September 2022.pdf" },
+							{ name: "Outcome of BM 31.03.2023- UFR.pdf", url: "BMoutcome/Outcome of BM 31.03.2023- UFR.pdf" },
+
+							{ name: "Outcome of BM 30.09.2022- UFR.pdf", url: "BMoutcome/Outcome of BM 30.09.2022- UFR.pdf" },
+							{ name: "Outcome of BM 30.06.2022- UFR.pdf", url: "BMoutcome/Outcome of BM 30.06.2022- UFR.pdf" },
+							{ name: "Outcome of BM 21.06.2022.pdf", url: "BMoutcome/Outcome of BM 21.06.2022.pdf" },
+						]
+					},
+					{
+						heading: "2021-2022",
+						pdfs: [
+							{ name: "Outcome of BM dated 30th June 2021.pdf", url: "BMoutcome/Outcome of BM dated 30th June 2021.pdf" },
+							{ name: "Outcome of BM dated 28th October 2021.pdf", url: "BMoutcome/Outcome of BM dated 28th October 2021.pdf" },
+							{ name: "Outcome of BM dated 12th August 2021.pdf", url: "BMoutcome/Outcome of BM dated 12th August 2021.pdf" },
+							{ name: "Outcome of BM dated 9th February 2022.pdf", url: "BMoutcome/Outcome of BM dated 9th February 2022.pdf" },
+
+							{ name: "Outcome of BM dated 2nd September 2021.pdf", url: "BMoutcome/Outcome of BM dated 2nd September 2021.pdf" },
+							{ name: "Outcome of BM 31.12.2021 UFR.pdf", url: "BMoutcome/Outcome of BM 31.12.2021 UFR.pdf" },
+							{ name: "Outcome of BM 31.03.2022 AFR.pdf", url: "BMoutcome/Outcome of BM 31.03.2022 AFR.pdf" },
+							{ name: "Outcome of BM 30.09.2021 UFR.pdf", url: "BMoutcome/Outcome of BM 30.09.2021 UFR.pdf" },
+
+							{ name: "Outcome of BM 26.03.2021.pdf", url: "BMoutcome/Outcome of BM 26.03.2021.pdf" },
+							
+						]
+					},
+					{
+						heading: "2020-2021",
+						pdfs: [
+							{ name: "Outcome of BM 31.12.2020 UFR.pdf", url: "BMoutcome/Outcome of BM 31.12.2020 UFR.pdf" },
+							{ name: "Outcome of BM 31.03.2021 AFR.pdf", url: "BMoutcome/Outcome of BM 31.03.2021 AFR.pdf" },
+							{ name: "Outcome of BM 30.09.2020 UFR.pdf", url: "BMoutcome/Outcome of BM 30.09.2020 UFR.pdf" },
+							{ name: "Outcome of BM 30.06.2020 UFR.pdf", url: "BMoutcome/Outcome of BM 30.06.2020 UFR.pdf" },
+
+							{ name: "Outcome of BM 23.11.2020.pdf", url: "BMoutcome/Outcome of BM 23.11.2020.pdf" },
+							]
+					},
+					{
+						heading: "2019-2020",
+						pdfs: [
+							{ name: "Outcome of BM 31.12.2019 UFR.pdf", url: "BMoutcome/Outcome of BM 31.12.2019 UFR.pdf" },
+							{ name: "Outcome of BM 31.03.2020 AFR.pdf", url: "BMoutcome/Outcome of BM 31.03.2020 AFR.pdf" },
+							{ name: "Outcome of BM 30.09.2019 UFR.pdf", url: "BMoutcome/Outcome of BM 30.09.2019 UFR.pdf" },
+							{ name: "Outcome of BM 30.06.2019 UFR.PDF", url: "BMoutcome/Outcome of BM 30.06.2019 UFR.PDF" },
+
+							{ name: "Outcome of BM 28.09.2019.pdf", url: "BMoutcome/Outcome of BM 28.09.2019.pdf" },
+							{ name: "Outcome of BM 27.08.2019.pdf", url: "BMoutcome/Outcome of BM 27.08.2019.pdf" },
+							{ name: "Outcome of BM 07.12.2019.pdf", url: "BMoutcome/Outcome of BM 07.12.2019.pdf" },
+							{ name: "Outcome of BM 05.09.2019.pdf", url: "BMoutcome/Outcome of BM 05.09.2019.pdf" },
+
+							{ name: "Outcome of BM 01.10.2019.pdf", url: "BMoutcome/Outcome of BM 01.10.2019.pdf" },
+							
+						]
+					},
+
+					{
+						heading: "2018-2019",
+						pdfs: [
+							{ name: "Outcome of BM 31.12.2018 UFR.pdf", url: "BMoutcome/Outcome of BM 31.12.2018 UFR.pdf" },
+							{ name: "Outcome of BM 31.03.2019 AFR.pdf", url: "BMoutcome/Outcome of BM 31.03.2019 AFR.pdf" },
+							{ name: "Outcome of BM 30.09.2018 UFR.pdf", url: "BMoutcome/Outcome of BM 30.09.2018 UFR.pdf" },
+							{ name: "Outcome of BM 30.06.2018 UFR.PDF", url: "BMoutcome/Outcome of BM 30.06.2018 UFR.PDF" },
+
+							{ name: "Outcome of BM 23.10.2018.pdf", url: "BMoutcome/Outcome of BM 23.10.2018.pdf" },
+							]
+					},
+					{
+						heading: "2017-2018",
+						pdfs: [
+							{ name: "Outcome of BM 31.12.2017 UFR.pdf", url: "BMoutcome/Outcome of BM 31.12.2017 UFR.pdf" },
+							{ name: "Outcome of BM 31.03.2018 AFR.pdf", url: "BMoutcome/Outcome of BM 31.03.2018 AFR.pdf" },
+							{ name: "Outcome of BM 30.09.2017 UFR.pdf", url: "BMoutcome/Outcome of BM 30.09.2017 UFR.pdf" },
+							{ name: "Outcome of BM 30.06.2017 UFR.PDF", url: "BMoutcome/Outcome of BM 30.06.2017 UFR.PDF" },							
+							]
+					},
+				]
+			},
+
+		
+			{
+				id: 5,
+				title: "Book Clouser",
+				sections: [
+					{
+						heading: "Book Clouser",
+						pdfs: [
+							{ name: "Bookclosure/Book Closure_2024 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2024 AGM.pdf" },
+							{ name: "Bookclosure/Book Closure_2023 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2023 AGM.pdf" },
+
+							{ name: "Bookclosure/Book Closure_2022 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2022 AGM.pdf" },
+							{ name: "Bookclosure/Book Closure_2021 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2021 AGM.pdf" },
+
+							{ name: "Bookclosure/Book Closure_2020 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2020 AGM.pdf" },
+							{ name: "Bookclosure/Book Closure_2019 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2019 AGM.pdf" },
+
+							{ name: "Bookclosure/Book Closure_2018 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2018 AGM.pdf" },
+							{ name: "Bookclosure/Book Closure_2017 AGM.pdf", url: "Bookclosure/Bookclosure/Book Closure_2017 AGM.pdf" },
+						]
+					}
+				]
+			},
+			{
+				id: 6,
+				title: "Voting Results",
+				sections: [
+					{
+						heading: "Voting Results",
+						pdfs: [
+							{ name: "Voting/Voting Results- 40th AGM.pdf", url: "Voting/Voting/Voting Results- 40th AGM.pdf" },
+							{ name: "Voting/Voting Results- 39th AGM.pdf", url: "Voting/Voting Results- 39th AGM.pdf" },
+							{ name: "Voting/Voting Results- 38th AGM.pdf", url: "Voting/Voting Results- 38th AGM.pdf" },
+							{ name: "Voting/Voting Results- 37th AGM.pdf", url: "Voting/Voting Results- 37th AGM.pdf" },
+							{ name: "Voting/Voting Results- 36th AGM.pdf", url: "Voting/Voting Results- 36th AGM.pdf" },
+
+							{ name: "Voting/Voting Results- 35th AGM.pdf", url: "Voting/Voting Results- 35th AGM.pdf" },
+							{ name: "Voting/Voting Results- 34th AGM.pdf", url: "Voting/Voting Results- 34th AGM.pdf" },
+							{ name: "Voting/Voting Results- 33rd AGM.pdf", url: "Voting/Voting Results- 33rd AGM.pdf" },
+						]
+					},
+					
+				]
+			},
+			{
+				id: 7,
+				title: "Scrutinizer Report",
+				sections: [
+					{
+						heading: "Scrutinizer Report",
+						pdfs: [
+							{ name: "Scrutinizer/Scrutinizer Report_2024 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2024 AGM.pdf" },
+							{ name: "Scrutinizer/Scrutinizer Report_2023 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2023 AGM.pdf" },
+							{ name: "Scrutinizer/Scrutinizer Report_2022 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2022 AGM.pdf" },
+							{ name: "Scrutinizer/Scrutinizer Report_2021 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2021 AGM.pdf" },
+							{ name: "Scrutinizer/Scrutinizer Report_2020 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2020 AGM.pdf" },
+							{ name: "Scrutinizer/Scrutinizer Report_2019 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2019 AGM.pdf" },
+							{ name: "Scrutinizer/Scrutinizer Report_2018 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2018 AGM.pdf" },
+							{ name: "Scrutinizer/Scrutinizer Report_2017 AGM.pdf", url: "Scrutinizer/Scrutinizer Report_2017 AGM.pdf" },
+
+						]
+					}
+				]
+			},
+			{
+				id: 8,
+				title: "Postal Ballot Notice",
+				sections: [
+					{
+						heading: "Postal Ballot ",
+						pdfs: [
+							{ name: "Postal/Results_02.05.2021.pdf", url: "Postal/Results_02.05.2021.pdf" },
+							{ name: "Postal/Results 31.10.2023.pdf", url: "Postal/Results 31.10.2023.pdf" },
+							{ name: "Postal/Results 20.03.2023.pdf", url: "Postal/Results 20.03.2023.pdf" },
+							{ name: "Postal/Results 12.04.2017.PDF", url: "Postal/Results 12.04.2017.PDF" },
+							{ name: "Postal/Results 02.05.2021.pdf", url: "Postal/Results 02.05.2021.pdf" },
+							{ name: "Postal/Results - 12th April, 2017.PDF", url: "Postal/Postal/Results - 12th April, 2017.PDF" },
+							{ name: "Postal/Postal Ballot Voting Results-19.03.2023.pdf", url: "Postal/Postal/Postal Ballot Voting Results-19.03.2023.pdf" },
+							{ name: "Postal/Postal Ballot Notice dated 26.03.2021.pdf", url: "Postal/Postal/Postal Ballot Notice dated 26.03.2021.pdf" },
+							{ name: "Postal/Postal Ballot Notice dated 25.09.2023.pdf", url: "Postal/Postal/Postal Ballot Notice dated 25.09.2023.pdf" },
+
+							{ name: "Postal/Postal Ballot Notice dated 17.02.2024.pdf", url: "Postal/Postal/Postal Ballot Notice dated 17.02.2024.pdf" },
+							{ name: "Postal/Postal Ballot Notice dated 13.02.2023.pdf", url: "Postal/Postal/Postal Ballot Notice dated 13.02.2023.pdf" },
+							{ name: "Postal/Postal Ballot Notice dated 03.03.2017.pdf", url: "Postal/Postal/Postal Ballot Notice dated 03.03.2017.pdf" },
+
+
+						]
+					}
+				]
+			},
+			{
+				id: 9,
+				title: "Newspaper Adv",
+				sections: [
+					{
+						heading: "2024-2025",
+						pdfs: [
+							{ name: "Newsroom/Newspaper Advt-UFR-30.09.2024.pdf", url: "Newsroom/Newspaper Advt-UFR-30.09.2024.pdf" },
+							{ name: "Newsroom/Newspaper Advt-AFR-31.03.2024.pdf", url: "Newsroom/Newspaper Advt-AFR-31.03.2024.pdf" },
+							{ name: "Newsroom/Newspaper Advt- AGM 10.09.2024.pdf", url: "Newsroom/Newspaper Advt- AGM 10.09.2024.pdf" },
+
+							{ name: "Newsroom/Newspaper Advt -UFR-31.12.2024.pdf", url: "Newsroom/Newspaper Advt -UFR-31.12.2024.pdf" },
+							{ name: "Newsroom/Newspaper Advt -UFR-30.06.2024.pdf", url: "Newsroom/Newspaper Advt -UFR-30.06.2024.pdf" },
+						]
+					},
+
+					{
+						heading: "2023-2024",
+						pdfs: [
+							{ name: "Newspaper Advt-AFR- 31.03.2024.pdf", url: "Newsroom/Newspaper Advt-AFR- 31.03.2024.pdf" },
+							{ name: "Newspaper Advt -UFR-31.12.2023.pdf", url: "Newsroom/Newspaper Advt -UFR-31.12.2023.pdf" },
+							{ name: "Newspaper Advt -UFR-30.09.2023.pdf", url: "Newsroom/Newspaper Advt -UFR-30.09.2023.pdf" },
+
+							{ name: "Newspaper Advt -UFR-30.06.2023.pdf", url: "Newsroom/Newspaper Advt -UFR-30.06.2023.pdf" },
+							{ name: "Newspaper Advt - Postal Ballot Notice dated 26th Sept, 2023.pdf", url: "Newsroom/Newspaper Advt - Postal Ballot Notice dated 26th Sept, 2023.pdf" },
+							{ name: "Newspaper Advt - Postal Ballot Notice dated 20th Feb 2024.pdf", url: "Newsroom/Newspaper Advt - Postal Ballot Notice dated 20th Feb 2024.pdf" },
+							{ name: "Newspaper Advt - Notice of 39th AGM.pdf", url: "Newsroom/Newspaper Advt - Notice of 39th AGM.pdf" },
+						]
+					},
+
+					{
+						heading: "2022-2023",
+						pdfs: [
+							{ name: "Newspaper Advt-UFR-31.12.2022.pdf", url: "Newsroom/Newspaper Advt-UFR-31.12.2022.pdf" },
+							{ name: "Newspaper Advt-UFR-30.09.2022.pdf", url: "Newsroom/Newspaper Advt-UFR-30.09.2022.pdf" },
+							{ name: "Newspaper Advt-UFR-30.06.2022.pdf", url: "Newsroom/Newspaper Advt-UFR-30.06.2022.pdf" },
+
+							{ name: "Newspaper Advt-Postal Ballot Notice dated 13.02.2023.pdf", url: "Newsroom/Newspaper Advt-Postal Ballot Notice dated 13.02.2023.pdf" },
+							{ name: "Newspaper Advt-Notice of 38th AGM.pdf", url: "Newsroom/Newspaper Advt-Notice of 38th AGM.pdf" },
+							
+						]
+					},
+
+					{
+						heading: "2021-2022",
+						pdfs: [
+							{ name: "Newspaper Advt-UFR-31.12.2021.pdf", url: "Newsroom/Newspaper Advt-UFR-31.12.2021.pdf" },
+							{ name: "Newspaper Advt-UFR-30.06.2021.pdf", url: "Newsroom/Newspaper Advt-UFR-30.06.2021.pdf" },
+							{ name: "Newspaper Advt-Notice of 37th AGM.pdf", url: "Newsroom/Newspaper Advt-Notice of 37th AGM.pdf" },
+
+							{ name: "Newspaper Advt-AFR-31.03.2021.pdf", url: "Newsroom/Newspaper Advt-AFR-31.03.2021.pdf" },
+							
+							
+						]
+					},
+
+					{
+						heading: "2020-2021",
+						pdfs: [
+							{ name: "Newspaper Advt-UFR-31.12.2020.pdf", url: "Newsroom/Newspaper Advt-UFR-31.12.2020.pdf" },
+							{ name: "Newspaper Advt-UFR-30.09.2020.pdf", url: "Newsroom/Newspaper Advt-UFR-30.09.2020.pdf" },
+							{ name: "Newspaper Advt-UFR-30.06.2020.pdf", url: "Newsroom/Newspaper Advt-UFR-30.06.2020.pdf" },
+							{ name: "Newspaper Advt-AFR-31.03.2021.pdf", url: "Newsroom/Newspaper Advt-AFR-31.03.2021.pdf" },
+
+							{ name: "Newspaper Advt- Postal Ballot Notice 2021.pdf", url: "Newsroom/Newspaper Advt- Postal Ballot Notice 2021.pdf" },
+							{ name: "Newspaper Advt- Intimation of BM Sept 2020.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM Sept 2020.pdf" },
+							{ name: "Newspaper Advt- Intimation of BM June 2020.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM June 2020.pdf" },
+							{ name: "Newspaper Advt- Intimation of BM Dec 2020.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM Dec 2020.pdf" },
+							{ name: "Neswpaper Advt-AGM Notice 2020.pdf", url: "Newsroom/Neswpaper Advt-AGM Notice 2020.pdf" },
+							
+							
+						]
+					},
+
+					
+					{
+						heading: "2019-2020",
+						pdfs: [
+							{ name: "Newspaper Advt-UFR-31.12.2019.pdf", url: "Newsroom/Newspaper Advt-UFR-31.12.2019.pdf" },
+							{ name: "Newspaper Advt-UFR-30.09.2019.pdf", url: "Newsroom/Newspaper Advt-UFR-30.09.2019.pdf" },
+							{ name: "Newspaper Advt-UFR-30.06 2019.pdf", url: "Newsroom/Newspaper Advt-UFR-30.06 2019.pdf" },
+							{ name: "Newspaper Advt-AFR-31.03.2020.pdf", url: "Newsroom/Newspaper Advt-AFR-31.03.2020.pdf" },
+
+							{ name: "Newspaper Advt- Intimation of BM Sept 2019.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM Sept 2019.pdf" },
+							{ name: "Newspaper Advt- Intimation of BM March 2020.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM March 2020.pdf" },
+							{ name: "Newspaper Advt- Intimation of BM June 2019.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM June 2019.pdf" },
+							{ name: "Newspaper Advt- Intimation of BM Dec 2019.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM Dec 2019.pdf" },						
+													
+						]
+					},
+
+					{
+						heading: "2018-2019",
+						pdfs: [
+							{ name: "Newspaper Advt-UFR-31.12.2018.pdf", url: "Newsroom/Newspaper Advt-UFR-31.12.2018.pdf" },
+							{ name: "Newspaper Advt-UFR-30.09.2018.pdf", url: "Newsroom/Newspaper Advt-UFR-30.09.2018.pdf" },
+							{ name: "Newspaper Advt-AFR-31.03.2019.pdf", url: "Newsroom/Newspaper Advt-AFR-31.03.2019.pdf" },
+							{ name: "Newspaper Advt- Intimation of BM March 2019.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM March 2019.pdf" },
+
+							{ name: "Newspaper Advt- Intimation of BM Dec 2018.pdf", url: "Newsroom/Newspaper Advt- Intimation of BM Dec 2018.pdf" },
+							{ name: "Newspaper Advt-  AGM Notice 2019.pdf", url: "Newsroom/Newspaper Advt-  AGM Notice 2019.pdf" },
+													
+													
+						]
+					},
+					{
+						heading: "2017-2018",
+						pdfs: [
+							{ name: "Newspaper Advt-Intimation of BM Sept 2017.pdf", url: "Newsroom/Newspaper Advt-Intimation of BM Sept 2017.pdf" },							
+													
+						]
+					},
+					
+				]
+			},
+			{
+				id: 10,
+				title: "Seceratarial Compliance Report ",
+				sections: [
+					{
+						heading: "Seceratarial Compliance Report",
+						pdfs: [
+							{ name: "Secretarial Compliance Report- 31.03.2024.pdf", url: "Secret/Secretarial Compliance Report- 31.03.2024.pdf" },
+							{ name: "Secretarial Compliance Report- 31.03.2023.pdf", url: "Secret/Secretarial Compliance Report- 31.03.2023.pdf" },
+							{ name: "Secretarial Compliance Report- 31.03.2022.pdf", url: "Secret/Secretarial Compliance Report- 31.03.2022.pdf" },
+							{ name: "Secretarial Compliance Report- 31.03.2021.pdf", url: "Secret/Secretarial Compliance Report- 31.03.2021.pdf" },
+							{ name: "Secretarial Compliance Report- 31.03.2020.pdf", url: "Secret/Secretarial Compliance Report- 31.03.2020.pdf" },
+							{ name: "Secretarial Compliance Report- 31.03.2019.pdf", url: "Secret/Secretarial Compliance Report- 31.03.2019.pdf" },
+						]
+					}
+				]
+			},
+			{
+				id: 11,
+				title: "Trading Window clouser",
+				sections: [
+					{
+						heading: "2024-2025",
+						pdfs: [
+							{ name: "Trading Window Closure_31.12.2024.pdf", url: "Trading/Trading Window Closure_31.12.2024.pdf" },
+							{ name: "Trading Window Closure_31.03.2025.pdf", url: "Trading/Trading Window Closure_31.03.2025.pdf" },
+							{ name: "Trading Window Closure_30.09.2024.pdf", url: "Trading/Trading Window Closure_30.09.2024.pdf" },
+							{ name: "Trading Window Closure_30.06.2024.pdf", url: "Trading/Trading Window Closure_30.06.2024.pdf" }
+						]
+					},
+
+					{
+						heading: "2023-2024",
+						pdfs: [
+							{ name: "Trading Window Closure_31.12.2023.pdf", url: "Trading/Trading Window Closure_31.12.2023.pdf" },
+							{ name: "Trading Window Closure_31.03.2024.pdf", url: "Trading/Trading Window Closure_31.03.2024.pdf" },
+							{ name: "Trading Window Closure_30.09.2023.pdf", url: "Trading/Trading Window Closure_30.09.2023.pdf" },
+							{ name: "Trading Window Closure_30.06.2023.pdf", url: "Trading/Trading Window Closure_30.06.2023.pdf" },
+						]
+					},
+
+					{
+						heading: "2022-2023",
+						pdfs: [
+							{ name: "Trading Window Closure - Qtr ended Sept 22.pdf", url: "Trading/Trading Window Closure - Qtr ended Sept 22.pdf" },
+							{ name: "Trading Window Closure - Qtr ended March 23.pdf", url: "Trading/Trading Window Closure - Qtr ended March 23.pdf" },
+							{ name: "Trading Window Closure - Qtr ended June 22.pdf", url: "Trading/Trading Window Closure - Qtr ended June 22.pdf" },
+							{ name: "Trading Window Closure - Qtr ended Dec 22.pdf", url: "Trading/Trading Window Closure - Qtr ended Dec 22.pdf" },
+						]
+					},
+
+					{
+						heading: "2021-2022",
+						pdfs: [
+							{ name: "Trading Window Closure_31.12.2021.pdf", url: "Trading/Trading Window Closure_31.12.2021.pdf" },
+							{ name: "Trading Window Closure_31.03.2022.pdf", url: "Trading/Trading Window Closure_31.03.2022.pdf" },
+							{ name: "Trading Window Closure_30.09.2021.pdf", url: "Trading/Trading Window Closure_30.09.2021.pdf" },
+							{ name: "Trading Window Closure_30.06.2021.pdf", url: "Trading/Trading Window Closure_30.06.2021.pdf" },
+						]
+					},
+
+					{
+						heading: "2020-2021",
+						pdfs: [
+							{ name: "Trading Window Closure_31.12.2020.pdf", url: "Trading/Trading Window Closure_31.12.2020.pdf" },
+							{ name: "Trading Window Closure_31.03.2021.pdf", url: "Trading/Trading Window Closure_31.03.2021.pdf" },
+							{ name: "Trading Window Closure_30.09.2020.pdf", url: "Trading/Trading Window Closure_30.09.2020.pdf" },
+							{ name: "Trading Window Closure_30.06.2020.pdf", url: "Trading/Trading Window Closure_30.06.2020.pdf" },
+						]
+					},
+
+					{
+						heading: "2019-2020",
+						pdfs: [
+							{ name: "Trading Window Closure_31.12.2019.pdf", url: "Trading/Trading Window Closure_31.12.2019.pdf" },
+							{ name: "Trading Window Closure_31.03.2020.pdf", url: "Trading/Trading Window Closure_31.03.2020.pdf" },
+							{ name: "Trading Window Closure_30.09.2019.pdf", url: "Trading/Trading Window Closure_30.09.2019.pdf" },
+							{ name: "Trading Window Closure_30.06.2019.pdf", url: "Trading/Trading Window Closure_30.06.2019.pdf" },
+						]
+					},
+
+					{
+						heading: "2018-2019",
+						pdfs: [
+							{ name: "Trading Window Closure_31.12.2018.pdf", url: "Trading/Trading Window Closure_31.12.2018.pdf" },
+							{ name: "Trading Window Closure_31.03.2019.pdf", url: "Trading/Trading Window Closure_31.03.2019.pdf" },
+							{ name: "Trading Window Closure_30.09.2018.pdf", url: "Trading/Trading Window Closure_30.09.2018.pdf" },
+							{ name: "Trading Window Closure_30.06.2018.pdf", url: "Trading/Trading Window Closure_30.06.2018.pdf" },
+						]
+					},
+
+					{
+						heading: "2017-2018",
+						pdfs: [
+							{ name: "Trading Window Closure_31.12.2017.pdf", url: "Trading/Trading Window Closure_31.12.2017.pdf" },
+							{ name: "Trading Window Closure_31.03.2018.pdf", url: "Trading/Trading Window Closure_31.03.2018.pdf" },
+							{ name: "Trading Window Closure_30.09.2017.pdf", url: "Trading/Trading Window Closure_30.09.2017.pdf" },
+							{ name: "Trading Window Closure_30.06.2017.pdf", url: "Trading/Trading Window Closure_30.06.2017.pdf" },
+						]
+					},
+				]
+			},
+			{
+				id: 12,
+				title: "RPT Disclosure",
+				sections: [
+					{
+						heading: "RPT Disclosure",
+						pdfs: [
+							{ name: "RPT Disclosure- 31.03.2024.pdf", url: "Rpt/RPT Disclosure- 31.03.2024.pdf" },
+							{ name: "RPT Disclosure- 31.03.2023.pdf", url: "Rpt/RPT Disclosure- 31.03.2023.pdf" },
+							{ name: "RPT Disclosure- 30.09.2023.pdf", url: "Rpt/RPT Disclosure- 30.09.2023.pdf" },
+							{ name: "RPT Disclosure - 31.03.2022.pdf", url: "Rpt/RPT Disclosure - 31.03.2022.pdf" },
+							{ name: "RPT Disclosure - 31.03.2020.pdf", url: "Rpt/RPT Disclosure - 31.03.2020.pdf" },
+							{ name: "RPT Disclosure - 30.09.2022.pdf", url: "Rpt/RPT Disclosure - 30.09.2022.pdf" },
+							{ name: "RPT Disclosure - 30.09.2021.pdf", url: "Rpt/RPT Disclosure - 30.09.2021.pdf" },
+							{ name: "RPT Disclosure - 30.09.2020.pdf", url: "Rpt/RPT Disclosure - 30.09.2020.pdf" },
+							{ name: "RPT Disclosure - 30.09.2019.pdf", url: "Rpt/RPT Disclosure - 30.09.2019.pdf" },
+						]
+					},
+					
+				]
+			},
+			{
+				id: 13,
+				title: "Policies",
+				sections: [
+					{
+						heading: "Policies",
+						pdfs: [
+							{ name: "Risk Management Policy.pdf", url: "Policies/Risk Management Policy.pdf" },
+							{ name: "Whistle Blower Policy.pdf", url: "Policies/Whistle Blower Policy.pdf" },
+							{ name: "Preservation of Documents.pdf", url: "Policies/Preservation of Documents.pdf" },
+							{ name: "Policy on Sexual Harrasment.pdf", url: "Policies/Policy on Sexual Harrasment.pdf" },
+							{ name: "Nomination and Remuneration Policy.pdf", url: "Policies/Nomination and Remuneration Policy.pdf" },
+							{ name: "Independent Director Policy.pdf", url: "Policies/Independent Director Policy.pdf" },
+							{ name: "Policies/Human Resource Policy.pdf", url: "Policies/Human Resource Policy.pdf" },
+							{ name: "Policies/Familarization Programme.pdf", url: "Policies/Familarization Programme.pdf" },
+
+							{ name: "Policies/Determination of Materiality.pdf", url: "Policies/Determination of Materiality.pdf" },
+							{ name: "Policies/Code of Conduct.pdf", url: "Policies/Code of Conduct.pdf" },
+							{ name: "Policies/COC for Insider Trading.pdf", url: "Policies/COC for Insider Trading.pdf" },
+							{ name: "Policies/Avance Technologies-Related Party Transactions Policy.pdf", url: "Policies/Avance Technologies-Related Party Transactions Policy.pdf" },
+
+							
+						]
+					}
+				]
+			},
+			{
+				id: 14,
+				title: "BSE Quartlerly Compliance",
+				sections: [
+					{
+						heading: "2024-2025",
+						pdfs: [
+							{ name: "Dec-Reg 74(5).pdf", url: "Bse/Reg 74(5).pdf" },
+							{ name: "Dec-SAR.pdf", url: "Bse/SAR.pdf" },
+							{ name: "Dec-UFR.pdf", url: "Bse/UFR.pdf" },							
+							{ name: "Sept-SHP.pdf", url: "Bse/SHP1.pdf" },
+							{ name: "Sept-SAR.pdf", url: "Bse/SAR1.pdf" },
+							{ name: "Sept-IGR.pdf", url: "Bse/IGR.pdf" },
+							{ name: "Sept-Reg 74(5).pdf", url: "Bse/Reg 74(5.1).pdf" },						
+							{ name: "Sept-CGR.pdf", url: "Bse/CGR.pdf" },
+
+							{ name: "june-UFR2.pdf", url: "Bse/UFR2.pdf" },							
+							{ name: "June-SHP2.pdf", url: "Bse/SHP2.pdf" },
+							{ name: "June-SAR2.pdf", url: "Bse/SAR2.pdf" },
+							{ name: "June-Reg 74(5.2).pdf", url: "Bse/Reg 74(5.2).pdf" },
+							{ name: "June-IGR2.pdf", url: "Bse/IGR2.pdf" },						
+							{ name: "June-CGR2.pdf", url: "Bse/CGR2.pdf" },
+
+
+							
+						]
+					},
+					{
+						heading: "2023-2024",
+						pdfs: [
+							{ name: "March-SHP3.pdf", url: "Bse/SHP3.pdf" },
+							{ name: "March-Reg 76.pdf", url: "Bse/Reg 76.pdf" },
+							{ name: "March-Reg 74(5).pdf", url: "Bse/Reg 74(5.3).pdf" },							
+							{ name: "March-Reg 40(9).pdf", url: "Bse/Reg 40(9).pdf" },
+							{ name: "March-Reg 7(3).pdf", url: "Bse/Reg 7(3).pdf" },
+							{ name: "March-Reg 13(3).pdf", url: "Bse/Reg 13(3).pdf" },
+							{ name: "March-CGR3.pdf", url: "Bse/CGR3.pdf" },						
+							{ name: "March-AFR.pdf", url: "Bse/AFR.pdf" },
+
+							{ name: "Sept-UFR7.pdf", url: "Bse/UFR7.pdf" },
+							{ name: "Sept-SHP7.pdf", url: "Bse/SHP7.pdf" },
+							{ name: "Sept-SAR7.pdf", url: "Bse/SAR7.pdf" },							
+							{ name: "Sept-Reg 74(5.7).pdf", url: "Bse/Reg 74(5.7).pdf" },
+							{ name: "Sept-IGR7.pdf", url: "Bse/IGR7.pdf" },
+							{ name: "Sept-CGR7.pdf", url: "Bse/CGR7.pdf" },
+
+							{ name: "Dec-UFR8.pdf", url: "Bse/UFR8.pdf" },
+							{ name: "Dec-SHP8.pdf", url: "Bse/SHP8.pdf" },
+							{ name: "Dec-SAR8.pdf", url: "Bse/SAR8.pdf" },							
+							{ name: "Dec-Reg 74(5.8).pdf", url: "Bse/Reg 74(5.8).pdf" },
+							{ name: "Dec-IGR6.pdf", url: "Bse/IGR8.pdf" },
+							{ name: "Dec-CGR6.pdf", url: "Bse/CGR8.pdf" },
+							
+							{ name: "June-UFR6.pdf", url: "Bse/UFR9.pdf" },
+							{ name: "June-SHP6.pdf", url: "Bse/SHP9.pdf" },
+							{ name: "June-SAR6.pdf", url: "Bse/SAR9.pdf" },							
+							{ name: "June-Reg 74(5.6).pdf", url: "Bse/Reg 74(5.9).pdf" },
+							{ name: "June-IGR6.pdf", url: "Bse/IGR9.pdf" },
+							{ name: "June-CGR6.pdf", url: "Bse/CGR9.pdf" },
+
+							
+							
+						]
+					},
+
+					{
+						heading: "2022-2023",
+						pdfs: [
+							{ name: "March-SHP.pdf", url: "Bse/SHP11.pdf" },
+							{ name: "March-Reg 76.pdf", url: "Bse/Reg 7611.pdf" },
+							{ name: "March-Reg 74(5.11).pdf", url: "Bse/Reg 74(5.11).pdf" },							
+							{ name: "March-Reg 57(5.11).pdf", url: "Bse/Reg 57(5.11).pdf" },
+							{ name: "March-Reg 40(9.11).pdf", url: "Bse/Reg 40(9.11).pdf" },
+							{ name: "March-Reg 24(a11).pdf", url: "Bse/Reg 24(a11).pdf" },
+							{ name: "March-Reg 7(3.11).pdf", url: "Bse/Reg 7(3.11).pdf" },						
+							{ name: "March-Non Applicability Letter.pdf", url: "Bse/Non Applicability Letter.pdf" },
+							{ name: "March-CGR11.pdf", url: "Bse/CGR11.pdf" },
+							{ name: "March-AFR11.pdf", url: "Bse/AFR11.pdf" },
+
+							{ name: "Dec-UFR12.pdf", url: "Bse/UFR12.pdf" },
+							{ name: "Dec-SHP12.pdf", url: "Bse/SHP12.pdf" },
+							{ name: "Dec-SAR12.pdf", url: "Bse/SAR12.pdf" },							
+							{ name: "Dec-Reg 74(5.12).pdf", url: "Bse/Reg 74(5.12).pdf" },
+							{ name: "Dec-IGR12.pdf", url: "Bse/IGR12.pdf" },
+							{ name: "Dec-CGR12.pdf", url: "Bse/CGR12.pdf" },
+
+							{ name: "Sept-UFR13.pdf", url: "Bse/UFR13.pdf" },
+							{ name: "Sept-SHP13.pdf", url: "Bse/SHP13.pdf" },
+							{ name: "Sept-SAR13.pdf", url: "Bse/SAR13.pdf" },							
+							{ name: "Sept-Reg 74(5.13).pdf", url: "Bse/Reg 74(5.13).pdf" },
+							{ name: "Sept-IGR13.pdf", url: "Bse/IGR13.pdf" },
+							{ name: "Sept-CGR13.pdf", url: "Bse/CGR13.pdf" },
+							{ name: "Sept-Disclosure of RPT-Sep 2022 -.pdf", url: "Bse/Disclosure of RPT-Sep 2022 -.pdf" },
+
+							
+							
+							{ name: "June-UFR6.pdf", url: "Bse/UFR14.pdf" },
+							{ name: "June-SHP6.pdf", url: "Bse/SHP14.pdf" },
+							{ name: "June-SAR6.pdf", url: "Bse/SAR14.pdf" },							
+							{ name: "June-Reg 74(5.6).pdf", url: "Bse/Reg 74(5.14).pdf" },
+							{ name: "June-IGR6.pdf", url: "Bse/IGR14.pdf" },
+							{ name: "June-CGR6.pdf", url: "Bse/CGR14.pdf" },
+
+							{ name: "UFR_30.06.2022.pdf", url: "Bse/UFR_30.06.2022.pdf" },
+							{ name: "17.02.2023_Newspaper Advertisement1.pdf", url: "Bse/17.02.2023_Newspaper Advertisement1.pdf" },
+							
+							
+						]
+					},
+
+					{
+						heading: "2021-2022",
+						pdfs: [
+							{ name: "March-SHP.pdf", url: "Bse/SHP15.pdf" },
+							{ name: "March-SAR15.pdf", url: "Bse/SAR15.pdf" },
+							{ name: "March-Reg 74(5.15).pdf", url: "Bse/Reg 74(5.15).pdf" },							
+							{ name: "March-Reg 40(9.15).pdf.pdf", url: "Bse/Reg 40(9.15).pdf" },
+							{ name: "March-Reg 24A March 2022 -.pdf", url: "Bse/Reg 24A March 2022 -.pdf" },
+							{ name: "March-Reg 7(3.15).pdf", url: "Bse/Reg 7(3.15).pdf" },
+							{ name: "March-Non-Applicability Letter for Large Corporate Entities.pdf", url: "Bse/Non-Applicability Letter for Large Corporate Entities.pdf" },						
+							{ name: "March-Disclosure of RPT-March 2022 -.pdf", url: "Bse/IGR15.pdf" },
+							{ name: "March-CGR15.pdf", url: "Bse/CGR15.pdf" },
+							{ name: "March-AFR - Qtr ended March 2022.pdf", url: "Bse/AFR - Qtr ended March 2022.pdf" },
+							{ name: "March-AFR - AFR - Qtr ended March 2022 (Revised).pdf", url: "Bse/AFR - AFR - Qtr ended March 2022 (Revised).pdf" },
+
+							{ name: "Dec-UFR16.pdf", url: "Bse/UFR16.pdf" },
+							{ name: "Dec-SHP16.pdf", url: "Bse/SHP16.pdf" },
+							{ name: "Dec-SAR16.pdf", url: "Bse/SAR16.pdf" },							
+							{ name: "Dec-Reg 74(5.16).pdf", url: "Bse/Reg 74(5.16).pdf" },
+							{ name: "Dec-IGR16.pdf", url: "Bse/IGR16.pdf" },
+							{ name: "Dec-CGR16.pdf", url: "Bse/CGR16.pdf" },
+
+							{ name: "Sept-UFR17.pdf", url: "Bse/UFR17.pdf" },
+							{ name: "Sept-SHP17.pdf", url: "Bse/SHP17.pdf" },
+							{ name: "Sept-SAR17.pdf", url: "Bse/SAR17.pdf" },							
+							{ name: "Sept-Reg 74(5.17).pdf", url: "Bse/Reg 74(5.17).pdf" },
+							{ name: "Sept-IGR17.pdf", url: "Bse/IGR17.pdf" },
+							{ name: "Sept-CGR17.pdf", url: "Bse/CGR17.pdf" },
+							{ name: "Sept-Disclosure of RPT-September 2021- Done.pdf", url: "Bse/Disclosure of RPT-September 2021- Done.pdf" },
+
+							
+							
+							{ name: "June-UFR18.pdf", url: "Bse/UFR18.pdf" },
+							{ name: "June-SHP18.pdf", url: "Bse/SHP18.pdf" },
+							{ name: "June-SAR18.pdf", url: "Bse/SAR18.pdf" },							
+							{ name: "June-Reg 74(5.18).pdf", url: "Bse/Reg 74(5.18).pdf" },
+							{ name: "June-IGR18.pdf", url: "Bse/IGR18.pdf" },
+							{ name: "June-CGR18.pdf", url: "Bse/CGR18.pdf" },
+
+							
+							
+							
+						]
+					},
+
+
+					{
+						heading: "2020-2021",
+						pdfs: [
+							{ name: "March-SHP.pdf", url: "Bse/SHP19.pdf" },
+							{ name: "March-SAR15.pdf", url: "Bse/SAR19.pdf" },
+							{ name: "March-Reg 74(5.19).pdf.pdf", url: "Bse/Reg 74(5.19).pdf" },							
+							{ name: "March-Reg 40(9.19).pdf", url: "Bse/Reg 40(9.19).pdf" },
+							{ name: "March-Reg 24A.pdf", url: "Bse/Reg 24A.pdf" },
+							{ name: "March-Reg 7(3.19).pdf", url: "Bse/Reg 7(3.19).pdf" },
+							{ name: "March-Non-Applicability Letter for Large Corporate Entities1- Done.pdf", url: "Bse/Non-Applicability Letter for Large Corporate Entities- Done.pdf" },						
+							{ name: "March-IGR19.pdf", url: "Bse/IGR19.pdf" },
+							{ name: "March-CGR19.pdf", url: "Bse/CGR19.pdf" },
+							{ name: "March-AFR - Qtr ended March 2021.pdf", url: "Bse/AFR - Qtr ended March 2021.pdf" },
+							{ name: "March-Disclosure of RPT.pdf", url: "Bse/Disclosure of RPT.pdf" },
+
+							
+							{ name: "Sept-UFR20.pdf", url: "Bse/UFR20.pdf" },
+							{ name: "Sept-SHP20.pdf", url: "Bse/SHP20.pdf" },
+							{ name: "Sept-SAR17.pdf", url: "Bse/SAR17.pdf" },							
+							{ name: "Sept-Reg 74(5.20).pdf", url: "Bse/Reg 74(5.20).pdf" },
+							{ name: "Sept-Reg 40(9.20).pdf", url: "Bse/Reg 40(9.20).pdf" },
+							{ name: "Sept-Reg 7(3.20).pdf", url: "Bse/Reg 7(3.20).pdf" },
+							{ name: "Sept-IGR.20.pdf", url: "Bse/IGR.20.pdf" },
+							{ name: "Sept-CGR.20.pdf", url: "Bse/CGR.20.pdf" },
+
+
+							{ name: "Dec-UFR21.pdf", url: "Bse/UFR21.pdf" },
+							{ name: "Dec-SHP21.pdf", url: "Bse/SHP21.pdf" },
+							{ name: "Dec-SAR21.pdf", url: "Bse/SAR21.pdf" },							
+							{ name: "Dec-Reg 74(5.21).pdf", url: "Bse/Reg 74(5.21).pdf" },
+							{ name: "Dec-IGR21.pdf", url: "Bse/IGR21.pdf" },
+							{ name: "Dec-CGR21.pdf", url: "Bse/CGR21.pdf" },
+
+
+							
+							
+							{ name: "June-UFR22.pdf", url: "Bse/UFR22.pdf" },
+							{ name: "June-SHP22.pdf", url: "Bse/SHP22.pdf" },
+							{ name: "June-SAR22.pdf", url: "Bse/SAR22.pdf" },							
+							{ name: "June-Reg 74(5)22.pdf", url: "Bse/Reg 74(5)22.pdf" },
+							{ name: "June-IGR22.pdf", url: "Bse/IGR22.pdf" },
+							{ name: "June-CGR22.pdf", url: "Bse/CGR22.pdf" },
+
+							
+							
+							
+						]
+					},
+
+					{
+						heading: "2019-2020",
+						pdfs: [
+							{ name: "March-SHP23.pdf", url: "Bse/SHP23.pdf" },
+							{ name: "March-SAR23.pdf", url: "Bse/SAR23.pdf" },
+							{ name: "March-Reg 74(5)23.pdf.pdf", url: "Bse/Reg 74(5)23.pdf" },							
+							{ name: "March-Reg 40(9)23.pdf", url: "Bse/Reg 40(9)23.pdf" },
+							{ name: "March-Reg 7(3)23.pdf", url: "Bse/Reg 7(3)23.pdf" },																			
+							{ name: "March-CGR23.pdf", url: "Bse/CGR23.pdf" },
+							{ name: "March-AFR23.pdf", url: "Bse/AFR23.pdf" },
+							
+
+							
+							{ name: "Sept-UFR24.pdf", url: "Bse/UFR24.pdf" },
+							{ name: "Sept-SHP24.pdf", url: "Bse/SHP24.pdf" },
+							{ name: "Sept-SAR24.pdf", url: "Bse/SAR24.pdf" },							
+							{ name: "Sept-Reg 74(5)24.pdf", url: "Bse/Reg 74(5)24.pdf" },
+							{ name: "Sept-Reg 40(9)24.pdf", url: "Bse/Reg 40(9)24.pdf" },
+							{ name: "Sept-Reg 7(3)24.pdf", url: "Bse/Reg 7(3)24.pdf" },
+							{ name: "Sept-IGR.24.pdf", url: "Bse/IGR.24.pdf" },
+							{ name: "Sept-CGR.24.pdf", url: "Bse/CGR.24.pdf" },
+
+
+							{ name: "Dec-UFR25.pdf", url: "Bse/UFR25.pdf" },
+							{ name: "Dec-SHP25.pdf", url: "Bse/SHP25.pdf" },
+							{ name: "Dec-SAR25.pdf", url: "Bse/SAR25.pdf" },							
+							{ name: "Dec-74(5)25.pdf", url: "Bse/74(5)25.pdf" },
+							{ name: "Dec-IGR25.pdf", url: "Bse/IGR25.pdf" },
+							{ name: "Dec-CGR25.pdf", url: "Bse/CGR25.pdf" },
+
+
+							
+							
+							{ name: "June-UFR26.pdf", url: "Bse/UFR26.pdf" },
+							{ name: "June-SHP26.pdf", url: "Bse/SHP26.pdf" },
+							{ name: "June-SAR22.pdf", url: "Bse/SAR22.pdf" },							
+							{ name: "June-74(5)26.pdf", url: "Bse/74(5)26.pdf" },
+							{ name: "June-IGR26.pdf", url: "Bse/IGR26.pdf" },
+							{ name: "June-CGR26.pdf", url: "Bse/CGR26.pdf" },
+
+							
+							
+							
+						]
+					},
+
+					{
+						heading: "2018-2019",
+						pdfs: [
+							{ name: "March-SHP27.pdf", url: "Bse/SHP27.pdf" },
+							{ name: "March-SAR27.pdf", url: "Bse/SAR27.pdf" },
+													
+							{ name: "March-Reg 40(9)27.pdf", url: "Bse/Reg 40(9)27.pdf" },
+							{ name: "March-Reg 7(3)27.pdf", url: "Bse/Reg 7(3)27.pdf" },																			
+							{ name: "March-CGR27.pdf", url: "Bse/CGR27.pdf" },
+							{ name: "March-AFR27.pdf", url: "Bse/AFR27.pdf" },
+							{ name: "March-IGR27.pdf", url: "Bse/IGR27.pdf" },
+							
+
+							
+							{ name: "Sept-UFR28.pdf", url: "Bse/UFR28.pdf" },
+							{ name: "Sept-SHP28.pdf", url: "Bse/SHP28.pdf" },
+							{ name: "Sept-SAR24.pdf", url: "Bse/SAR24.pdf" },														
+							{ name: "Sept-Reg 40(9)28.pdf", url: "Bse/Reg 40(9)28.pdf" },
+							{ name: "Sept-Reg 7(3)28.pdf", url: "Bse/Reg 7(3)28.pdf" },
+							{ name: "Sept-IGR.28.pdf", url: "Bse/IGR.28.pdf" },
+							{ name: "Sept-CGR.28.pdf", url: "Bse/CGR.28.pdf" },
+
+
+							{ name: "Dec-UFR29.pdf", url: "Bse/UFR29.pdf" },
+							{ name: "Dec-SHP29.pdf", url: "Bse/SHP29.pdf" },
+							{ name: "Dec-SAR29.pdf", url: "Bse/SAR29.pdf" },							
+							
+							{ name: "Dec-IGR29.pdf", url: "Bse/IGR29.pdf" },
+							{ name: "Dec-CGR29.pdf", url: "Bse/CGR29.pdf" },
+
+
+							
+							
+							{ name: "June-UFR30.pdf", url: "Bse/UFR30.PDF" },
+							{ name: "June-SHP30.pdf", url: "Bse/SHP30.pdf" },
+							{ name: "June-SAR30.pdf", url: "Bse/SAR30.pdf" },							
+						
+							{ name: "June-IGR30.pdf", url: "Bse/IGR30.pdf" },
+							{ name: "June-CGR30.pdf", url: "Bse/CGR30.pdf" },
+
+							
+							
+							
+						]
+					},
+
+					{
+						heading: "2017-2018",
+						pdfs: [
+							{ name: "March-SHP31.pdf", url: "Bse/SHP31.pdf" },
+							{ name: "March-SAR31.pdf", url: "Bse/SAR27.pdf" },													
+							{ name: "March-Reg 40(9)27.pdf", url: "Bse/Reg 40(9)31.pdf" },
+							{ name: "March-Reg 7(3)31.pdf", url: "Bse/Reg 7(3)31.pdf" },																			
+							{ name: "March-CGR31.pdf", url: "Bse/CGR31.pdf" },
+							{ name: "March-AFR31.pdf", url: "Bse/AFR31.pdf" },
+							{ name: "March-IGR31.pdf", url: "Bse/IGR31.pdf" },
+							
+
+							
+							{ name: "Sept-UFR32.pdf", url: "Bse/UFR32.pdf" },
+							{ name: "Sept-SHP32.pdf", url: "Bse/SHP32.pdf" },
+							{ name: "Sept-SAR32.pdf", url: "Bse/SAR32.pdf" },														
+							{ name: "Sept-Reg 40(9)32.pdf", url: "Bse/Reg 40(9)32.pdf" },
+							{ name: "Sept-Reg 7(3)32.pdf", url: "Bse/Reg 7(3)32.pdf" },
+							{ name: "Sept-IGR.32.pdf", url: "Bse/IGR.32.pdf" },
+							{ name: "Sept-CGR.32.pdf", url: "Bse/CGR.32.pdf" },
+
+
+							{ name: "Dec-UFR33.pdf", url: "Bse/UFR33.pdf" },
+							{ name: "Dec-SHP33.pdf", url: "Bse/SHP29.pdf" },
+							{ name: "Dec-SAR33.pdf", url: "Bse/SAR33.pdf" },														
+							{ name: "Dec-IGR33.pdf", url: "Bse/IGR33.pdf" },
+							{ name: "Dec-CGR33.pdf", url: "Bse/CGR33.pdf" },
+
+
+							
+							
+							{ name: "June-UFR34.pdf", url: "Bse/UFR34.PDF" },
+							{ name: "June-SHP34.pdf", url: "Bse/SHP34.pdf" },
+							{ name: "June-SAR34.pdf", url: "Bse/SAR34.pdf" },													
+							{ name: "June-IGR34.pdf", url: "Bse/IGR34.pdf" },
+							{ name: "June-CGR34.pdf", url: "Bse/CGR34.pdf" },
+
+							
+							
+							
+						]
+					},
+
+
+
+				]
+			},
+			{
+				id: 15,
+				title: "Updates",
+				sections: [
+					{
+						heading: "2024-2025",
+						pdfs: [
+							{ name: "Scrutinizer Report-AGM-2024.pdf", url: "update/Scrutinizer Report-AGM-2024.pdf" },
+							{ name: "Proceedings of AGM-2024.pdf", url: "update/Proceedings of AGM-2024.pdf" },
+							{ name: "Notice of Annual General Meeting for the FY 2023-24.pdf", url: "update/Notice of Annual General Meeting for the FY 2023-24.pdf" },
+							{ name: "Large Corporate Entity Disclosure FY 2023-24.pdf", url: "update/Large Corporate Entity Disclosure FY 2023-24.pdf" },
+							{ name: "Intimation of Record Date-AGM 2024.pdf", url: "update/Intimation of Record Date-AGM 2024.pdf" },
+							{ name: "Intimation of Book Closure-AGM 2024.pdf", url: "update/Intimation of Book Closure-AGM 2024.pdf" },
+							{ name: "Corporate Announcement – Incorporation of Wholly Owned Subsidiary.pdf", url: "update/Corporate Announcement – Incorporation of Wholly Owned Subsidiary.pdf" },
+							{ name: "Annual Secretarial Compliance Report for FY 2023-24.pdf", url: "update/Annual Secretarial Compliance Report for FY 2023-24.pdf" },
+
+						]
+					},
+
+					{
+						heading: "2023-2024",
+						pdfs: [
+							{ name: "Proceedings of 39th AGM FY 2022-23.pdf", url: "update/Proceedings of 39th AGM FY 2022-23.pdf" },
+							{ name: "MGT-9 FY 2023-24.pdf", url: "update/MGT-9 FY 2023-24.pdf" },
+							{ name: "Intimation of Record Date for the Sub-division of Equity Shares.pdf", url: "update/Intimation of Record Date for the Sub-division of Equity Shares.pdf" },
+							{ name: "Intimation of Record Date - 39th AGM.pdf", url: "update/Intimation of Record Date - 39th AGM.pdf" },
+							{ name: "Intimation of Pricing as on Relevant Date (Preferential Allotment).pdf", url: "update/Intimation of Pricing as on Relevant Date (Preferential Allotment).pdf" },
+							{ name: "Clarification of Suspension of Trading of Securities.pdf", url: "update/Clarification of Suspension of Trading of Securities.pdf" },
+							{ name: "Announcement for Re-classification of Promoters.pdf", url: "update/Announcement for Re-classification of Promoters.pdf" },
+							
+
+						]
+					},
+
+					{
+						heading: "2022-2023",
+						pdfs: [
+							{ name: "Proceedings of 38th Annual General Meeting.pdf", url: "update/Proceedings of 38th Annual General Meeting.pdf" },
+							{ name: "Notice of postponement of Board Meeting.pdf", url: "update/Notice of postponement of Board Meeting.pdf" },
+							{ name: "Intimation of Record Date-38th AGM.pdf", url: "update/Intimation of Record Date-38th AGM.pdf" },
+							{ name: "Intimation of Record date for Sub division of Equity Shares.pdf", url: "update/Intimation of Record date for Sub division of Equity Shares.pdf" },
+							{ name: "Intimation for Typographical Error in Proceedings of 38th AGM FY 2021-22.pdf", url: "update/Intimation for Typographical Error in Proceedings of 38th AGM FY 2021-22.pdf" },
+							
+							
+
+						]
+					},
+
+					{
+						heading: "2021-2022",
+						pdfs: [
+							{ name: "Scrutinizer Report-37th AGM.pdf", url: "update/Scrutinizer Report-37th AGM.pdf" },
+							{ name: "Proceedings of 37th Annual General Meeting.pdf", url: "update/Proceedings of 37th Annual General Meeting.pdf" },
+							{ name: "Intimation of Record Date-37th AGM.pdf", url: "update/Intimation of Record Date-37th AGM.pdf" },
+							{ name: "Announcement for Re-Classification of Promoters.pdf", url: "update/Announcement for Re-Classification of Promoters1.pdf" },
+							
+							
+							
+
+						]
+					},
+				]
+			}
+		];
+		
+		// Get the container where we'll add the accordions
+		const container = document.getElementById('investor-accordion');
+		
+		// Create and append accordion items
+		investorData.forEach(item => {
+			const accordionItem = document.createElement('div');
+			accordionItem.className = 'news-block_three mb-4';
+			
+			let contentHTML = '';
+			
+			// For items with id >= 3, use sections with sub-headings
+			if (item.id >= 3 && item.sections) {
+				// Create sections with headings and PDF lists
+				item.sections.forEach(section => {
+					let sectionPDFsHTML = '';
+					section.pdfs.forEach(pdf => {
+						sectionPDFsHTML += `
+							<li>
+								<a href="${pdf.url}" target="_blank" rel="noopener noreferrer">
+									<i class="fa-regular fa-file-pdf"></i>
+									<span>${pdf.name}</span>
+								</a>
+							</li>
+						`;
+					});
+					
+					contentHTML += `
+						<div class="sub-heading">${section.heading}</div>
+						<ul class="pdf-list">
+							${sectionPDFsHTML}
+						</ul>
+					`;
+				});
+			} else if (item.id < 3) {
+				// Standard PDF list for items with id < 3
+				let pdfListHTML = '';
+				if (item.pdfs) {
+					item.pdfs.forEach(pdf => {
+						pdfListHTML += `
+							<li>
+								<a href="${pdf.url}" target="_blank" rel="noopener noreferrer">
+									<i class="fa-regular fa-file-pdf"></i>
+									<span>${pdf.name}</span>
+								</a>
+							</li>
+						`;
+					});
+					
+					contentHTML = `
+						<ul class="pdf-list">
+							${pdfListHTML}
+						</ul>
+					`;
+				}
+			}
+			
+			accordionItem.innerHTML = `
+				<div class="news-block_three-inner">
+					<div class="accordion-header" onclick="toggleAccordion(${item.id})">
+						<h3 class="news-block_three-title mb-0">${item.title}</h3>
+						<span class="fa-solid fa-angle-down fa-fw" id="icon-${item.id}"></span>
+					</div>
+					<div class="accordion-content" id="content-${item.id}">
+						${contentHTML}
+					</div>
+				</div>
+			`;
+			
+			container.appendChild(accordionItem);
+		});
+	});
+	
+	// Function to toggle accordion
+	function toggleAccordion(id) {
+		const content = document.getElementById(`content-${id}`);
+		const icon = document.getElementById(`icon-${id}`);
+		
+		if (content.style.display === 'block') {
+			content.style.display = 'none';
+			icon.classList.remove('fa-angle-up');
+			icon.classList.add('fa-angle-down');
+		} else {
+			content.style.display = 'block';
+			icon.classList.remove('fa-angle-down');
+			icon.classList.add('fa-angle-up');
+		}
+	}
+</script>
+
+</body>
+</html>
