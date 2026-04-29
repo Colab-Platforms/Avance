@@ -87,6 +87,31 @@
 
 ***/
 
+
+/* Director Modal Styling .......................................................................*/
+.modal-content {
+    border: 1px solid;
+    border-radius: 8px;
+	background-color: var(--main-color) !important ;
+	color: var(--white-color) !important;
+}
+
+/* .btn-outline-light:hover {
+    background-color: #00d4ff;
+    color: #000;
+} */
+
+#directorSubtitle {
+    font-style: italic;
+    font-weight: 500;
+}
+
+#directorDescription {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
 .slider-one{
 	position:relative;
 }

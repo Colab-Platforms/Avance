@@ -30,6 +30,7 @@
         justify-content: space-between;
         align-items: center;
         transition: all 0.3s ease;
+		color: var(--color-four) !important;
     }
     
     .accordion-header:hover {
@@ -290,7 +291,7 @@
 				<!-- Content Side -->
                 <div class="content-side col-lg-12 col-md-12 col-sm-12">
 					<div class="blog-classic">
-                        <h2 class="mb-4">Investor Documents</h2>
+                        <h2 style="color: white !important" class="mb-4">Investor Documents</h2>
                         <div class="accordion-container" id="investor-accordion">
                             <!-- Accordion items will be generated here by JavaScript -->
                         </div>
@@ -474,6 +475,22 @@
 			},
 			{
 				id: 3,
+				title: "Annual Returns",
+				sections: [
+					{
+						heading: "Annual Returns",
+						pdfs: [
+							{ name: "Annual Return FY 2020-21", url: "Annual Return/Annual Return FY 2020-21.pdf" },
+							{ name: "Annual Return FY 2021-22", url: "Annual Return/Annual Return FY 2021-22.pdf" },
+							{ name: "Annual Return FY 2022-23", url: "Annual Return/Annual Return FY 2022-23.pdf" },
+							{ name: "Annual Return FY 2023-24", url: "Annual Return/Annual Return FY 2023-24.pdf" },
+							{ name: "Annual Return FY 2024-25", url: "Annual Return/Annual Return FY 2024-25.pdf" }
+						]
+					}
+				]
+			},
+			{
+				id: 4,
 				title: "BM Intimation",
 				sections: [
 					{

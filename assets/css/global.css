@@ -387,7 +387,7 @@ textarea{
 p{
 	position:relative;
 	line-height:1.7em;
-	color:var(--color-four);
+	color:var(--white-color);
 	font-size:16px;
 }
 
