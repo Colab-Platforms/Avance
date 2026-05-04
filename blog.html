@@ -1085,32 +1085,105 @@
 			"1": {
 				name: "Mr. Latesh Poojary",
 				subtitle: "(Chairman & Managing Director)",
-				description: "Mr. Latesh Poojary has a visionary leadership and strategic direction perspective, guiding the Company towards sustained growth and operational excellence. With a focus on innovation and performance, he plays a pivotal role in strengthening the Company's market position and delivering long-term value to stakeholders."
+				description: `Mr. Latesh Poojary has a visionary leadership and strategic direction perspective, guiding the Company towards sustained growth and operational excellence. With a focus on innovation and performance, he plays a pivotal role in strengthening the Company's market position and delivering long-term value to stakeholders.
+				<br>
+				<p style="font-style: italic; color: white">No directorships or full-time employment in any other body corporate.</p>
+				`
 			},
 			"2": {
 				name: "Mr. Vasant Bhoir",
 				subtitle: "(Non-Executive - Non-Independent Director)",
-				description: "Mr. Vasant Tukaram Bhoir is a proficient analyst with extensive exposure to the marketing domain. His analytical approach and market understanding contribute to informed decision-making and business development"
+				description: `Mr. Vasant Tukaram Bhoir is a proficient analyst with extensive exposure to the marketing domain. His analytical approach and market understanding contribute to informed decision-making and business development.
+				
+				<h6 style="color: #ffc107; font-weight: bold; margin-top: 20px; margin-bottom: 15px;">List of Associated Companies</h6>
+				<table class="table table-bordered" style="color: white;">
+					<thead style="background-color: #333;">
+						<tr>
+							<th>Sr. No.</th>
+							<th>Name of the Company</th>
+							<th>Designation</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1.</td>
+							<td>Panki Investments Limited</td>
+							<td>Independent Director</td>
+						</tr>
+					</tbody>
+				</table>`
 			},
 			"3": {
 				name: "Mr. Deepak Mane",
 				subtitle: "(Non-Executive - Non-Independent Director)",
-				description: "Mr. Deepak Mane possesses extensive experience and deep sectoral knowledge, enabling him to contribute effectively to the Company’s strategic and operational objectives."
+				description: `Mr. Deepak Mane possesses extensive experience and deep sectoral knowledge, enabling him to contribute effectively to the Company’s strategic and operational objectives.
+				<br>
+				<p style="font-style: italic">No directorships or full-time employment in any other body corporate.</p>
+				`
 			},
 			"4": {
 				name: "Mr. Akshay Vijay Nawale",
 				subtitle: "(Independent Director)",
-				description: "Mr. Akshay Vijay Nawale serves as an Independent Director on the Board of the Company. He has an extensive experience and professional expertise across various sectors and functional areas such as finance, governance, legal, strategy, Business or operations etc. With a strong understanding of corporate governance and regulatory frameworks, he also provides valuable guidance in enhancing transparency, accountability, and long-term stakeholder value."
+				description: `Mr. Akshay Vijay Nawale serves as an Independent Director on the Board of the Company. He has an extensive experience and professional expertise across various sectors and functional areas such as finance, governance, legal, strategy, Business or operations etc. With a strong understanding of corporate governance and regulatory frameworks, he also provides valuable guidance in enhancing transparency, accountability, and long-term stakeholder value.
+				
+				<h6 style="color: #ffc107; font-weight: bold; margin-top: 20px; margin-bottom: 15px;">List of Associated Companies</h6>
+				<table class="table table-bordered" style="color: white;">
+					<thead style="background-color: #333;">
+						<tr>
+							<th>Sr. No.</th>
+							<th>Name of the Company</th>
+							<th>Designation</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1.</td>
+							<td>Sanguine Media Limited</td>
+							<td>Director</td>
+						</tr>
+						<tr>
+							<td>2.</td>
+							<td>Allied Computers International (ASIA) Limited</td>
+							<td>Director</td>
+						</tr>
+					</tbody>
+				</table>
+
+				`
 			},
 			"5": {
 				name: "Mrs. Shakila Ramjansha Makandar",
 				subtitle: "(Independent Director)",
-				description: "Mrs. Shakila Ramjansha Makandar is an Independent Director of the Company, contributing a wealth of experience in order to elevate the Business growth of the Company. She possesses strong expertise in areas such as strategic planning, compliance, risk oversight, and corporate governance and other industrial sectors as well and her guidance supports the Company in maintaining high standards of integrity, transparency, and sustainable performance while protecting the interests of shareholders and other stakeholders."
+				description: `Mrs. Shakila Ramjansha Makandar is an Independent Director of the Company, contributing a wealth of experience in order to elevate the Business growth of the Company. She possesses strong expertise in areas such as strategic planning, compliance, risk oversight, and corporate governance and other industrial sectors as well and her guidance supports the Company in maintaining high standards of integrity, transparency, and sustainable performance while protecting the interests of shareholders and other stakeholders.
+				<br>
+				<p style="font-style: italic">No directorships or full-time employment in any other body corporate.</p>
+				`
 			},
 			"6": {
 				name: "Mr. Sanjay Devlekar",
 				subtitle: "(Independent Director)",
-				description: "Mr. Sanjay Devlekar serves as an Independent Director on the Board, bringing diverse professional experience and a balanced perspective to the Company’s governance framework. He actively contributes to Board deliberations by providing constructive oversight, promoting sound decision-making, and ensuring that the Company adheres to high standards of ethics and compliance."
+				description: `Mr. Sanjay Devlekar serves as an Independent Director on the Board, bringing diverse professional experience and a balanced perspective to the Company’s governance framework. He actively contributes to Board deliberations by providing constructive oversight, promoting sound decision-making, and ensuring that the Company adheres to high standards of ethics and compliance.
+				
+
+				<h6 style="color: #ffc107; font-weight: bold; margin-top: 20px; margin-bottom: 15px;">List of Associated Companies</h6>
+				<table class="table table-bordered" style="color: white;">
+					<thead style="background-color: #333;">
+						<tr>
+							<th>Sr. No.</th>
+							<th>Name of the Company</th>
+							<th>Designation</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1.</td>
+							<td>Aadhaar Ventures India Limited</td>
+							<td>Independent Director</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				`
 			},
 			"7": {
 				name: "Mrs. Sneha Shrivastava",
@@ -1130,7 +1203,7 @@
 			if (director) {
 				document.getElementById('directorModalLabel').textContent = director.name;
 				document.getElementById('directorSubtitle').textContent = director.subtitle;
-				document.getElementById('directorDescription').textContent = director.description;
+				document.getElementById('directorDescription').innerHTML = director.description;
 			}
 		}
 	</script>
