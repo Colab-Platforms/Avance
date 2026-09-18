@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
+}
+
+model Admin {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Tab {
+  id        String     @id @default(auto()) @map("_id") @db.ObjectId
+  title     String     @unique
+  order     Int        @default(0)
+  sections  Section[]
+  documents Document[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Section {
+  id        String     @id @default(auto()) @map("_id") @db.ObjectId
+  heading   String
+  order     Int        @default(0)
+  tabId     String     @db.ObjectId
+  tab       Tab        @relation(fields: [tabId], references: [id])
+  documents Document[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+
+  @@unique([tabId, heading])
+  @@index([tabId])
+}
+
+model Document {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  url       String
+  order     Int      @default(0)
+  tabId     String   @db.ObjectId
+  tab       Tab      @relation(fields: [tabId], references: [id])
+  sectionId String?  @db.ObjectId
+  section   Section? @relation(fields: [sectionId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tabId])
+  @@index([sectionId])
+}
