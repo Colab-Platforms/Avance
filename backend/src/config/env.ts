@@ -10,6 +10,9 @@ const envSchema = z.object({
   PORT: z.coerce.number().int().positive().default(4000),
   CORS_ORIGINS: z.string().min(1, "CORS_ORIGINS is required"),
   NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
+  CLOUDINARY_CLOUD_NAME: z.string().min(1, "CLOUDINARY_CLOUD_NAME is required"),
+  CLOUDINARY_API_KEY: z.string().min(1, "CLOUDINARY_API_KEY is required"),
+  CLOUDINARY_API_SECRET: z.string().min(1, "CLOUDINARY_API_SECRET is required"),
 });
 
 function loadEnv() {
@@ -37,4 +40,7 @@ export const env = {
   port: parsedEnv.PORT,
   corsOrigins: parsedEnv.CORS_ORIGINS.split(",").map((origin) => origin.trim()).filter(Boolean),
   nodeEnv: parsedEnv.NODE_ENV,
+  cloudinaryCloudName: parsedEnv.CLOUDINARY_CLOUD_NAME,
+  cloudinaryApiKey: parsedEnv.CLOUDINARY_API_KEY,
+  cloudinaryApiSecret: parsedEnv.CLOUDINARY_API_SECRET,
 };

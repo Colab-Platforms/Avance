@@ -67,6 +67,73 @@ function closeAllModals() {
   pendingConfirmCallback = null;
 }
 
+// Switch a document modal ("doc" or "edit-doc") between "Paste Link" and "Upload PDF" mode
+function setDocMode(prefix, mode) {
+  const toggle = document.getElementById(`${prefix}-mode-toggle`);
+  const urlGroup = document.getElementById(`${prefix}-url-group`);
+  const fileGroup = document.getElementById(`${prefix}-file-group`);
+  const urlInput = document.getElementById(`${prefix}-url`);
+  const fileInput = document.getElementById(`${prefix}-file`);
+
+  toggle.querySelectorAll(".ad-toggle-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.mode === mode);
+  });
+
+  const isUrlMode = mode === "url";
+  urlGroup.hidden = !isUrlMode;
+  fileGroup.hidden = isUrlMode;
+
+  if (isUrlMode) {
+    fileInput.value = "";
+  }
+
+  toggle.dataset.activeMode = mode;
+}
+
+document.querySelectorAll(".ad-toggle-group").forEach((group) => {
+  group.querySelectorAll(".ad-toggle-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const prefix = group.id.replace("-mode-toggle", "");
+      setDocMode(prefix, btn.dataset.mode);
+    });
+  });
+});
+
+// Resolve the document URL for a "doc"/"edit-doc" modal: either the pasted URL,
+// or upload the chosen PDF to Cloudinary first and use the returned URL.
+async function resolveDocumentUrl(prefix, submitBtn) {
+  const toggle = document.getElementById(`${prefix}-mode-toggle`);
+  const mode = toggle.dataset.activeMode || "url";
+
+  if (mode === "upload") {
+    const fileInput = document.getElementById(`${prefix}-file`);
+    const file = fileInput.files[0];
+    if (!file) {
+      throw new Error("Please choose a PDF file to upload.");
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    const originalLabel = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Uploading...";
+    try {
+      const result = await apiUpload("/admin/uploads/pdf", formData);
+      return result.url;
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalLabel;
+    }
+  }
+
+  const url = document.getElementById(`${prefix}-url`).value.trim();
+  if (!url) {
+    throw new Error("Please enter a PDF document URL.");
+  }
+  return url;
+}
+
 function showConfirmDialog({ title, message, confirmText = "Delete", onConfirm }) {
   confirmModalTitle.textContent = title || "Confirm Action";
   confirmModalMessage.textContent = message;
@@ -333,6 +400,7 @@ function createDocumentRowElement(doc, sectionHeading) {
     document.getElementById("edit-doc-url").value = doc.url || "";
     document.getElementById("edit-doc-section").value = sectionHeading || "";
     document.getElementById("edit-doc-order").value = doc.order !== undefined && doc.order !== null ? doc.order : 0;
+    setDocMode("edit-doc", "url");
     openModal(modalEditDoc);
   });
 
@@ -475,6 +543,7 @@ document.getElementById("open-add-doc-modal").addEventListener("click", () => {
     return;
   }
   document.getElementById("create-doc-form").reset();
+  setDocMode("doc", "url");
   openModal(modalCreateDoc);
 });
 
@@ -484,9 +553,16 @@ document.getElementById("create-doc-form").addEventListener("submit", async (e) 
   clearError();
 
   const title = document.getElementById("doc-title").value.trim();
-  const url = document.getElementById("doc-url").value.trim();
   const section = document.getElementById("doc-section").value.trim();
   const orderValue = document.getElementById("doc-order").value;
+
+  let url;
+  try {
+    url = await resolveDocumentUrl("doc", e.target.querySelector('button[type="submit"]'));
+  } catch (err) {
+    showError(err.message);
+    return;
+  }
 
   const payload = { tabId: activeTabId, title, url };
   if (section !== "") {
@@ -519,9 +595,16 @@ document.getElementById("edit-doc-form").addEventListener("submit", async (e) =>
 
   const id = document.getElementById("edit-doc-id").value;
   const title = document.getElementById("edit-doc-title").value.trim();
-  const url = document.getElementById("edit-doc-url").value.trim();
   const section = document.getElementById("edit-doc-section").value.trim();
   const orderValue = document.getElementById("edit-doc-order").value;
+
+  let url;
+  try {
+    url = await resolveDocumentUrl("edit-doc", e.target.querySelector('button[type="submit"]'));
+  } catch (err) {
+    showError(err.message);
+    return;
+  }
 
   const payload = {
     title,

@@ -774,6 +774,43 @@ header.ad-header {
   margin-top: 4px;
 }
 
+.ad-toggle-group {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: #f1f5f9;
+  border-radius: var(--radius-sm);
+}
+
+.ad-toggle-btn {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  border-radius: calc(var(--radius-sm) - 2px);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ad-toggle-btn:hover {
+  color: #334155;
+}
+
+.ad-toggle-btn.active {
+  background: #ffffff;
+  color: var(--main-color);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.ad-form-group input[type="file"] {
+  padding: 8px 10px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
 .ad-modal-actions {
   display: flex;
   justify-content: flex-end;
@@ -817,6 +854,11 @@ header.ad-header {
 
 .ad-btn.danger:hover {
   background: var(--danger-red-hover);
+}
+
+.ad-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* ==========================================================================

@@ -54,3 +54,29 @@ async function apiFetch(path, options) {
 
   return body;
 }
+
+async function apiUpload(path, formData) {
+  const headers = {};
+  const token = getToken();
+  if (token) {
+    headers["Authorization"] = "Bearer " + token;
+  }
+
+  const res = await fetch(API_BASE + path, { method: "POST", headers, body: formData });
+
+  if (res.status === 401) {
+    clearToken();
+    window.location.href = "login.html";
+    throw new Error("Session expired, please log in again");
+  }
+
+  const contentType = res.headers.get("content-type") || "";
+  const body = contentType.includes("application/json") ? await res.json() : null;
+
+  if (!res.ok) {
+    const message = (body && body.error) || `Request failed with status ${res.status}`;
+    throw new Error(message);
+  }
+
+  return body;
+}

@@ -208,8 +208,20 @@
           <input type="text" id="doc-title" required maxlength="300" placeholder="e.g. Notice of 43rd AGM" />
         </div>
         <div class="ad-form-group">
+          <label>Document Source</label>
+          <div class="ad-toggle-group" id="doc-mode-toggle" role="group" aria-label="Document source">
+            <button type="button" class="ad-toggle-btn active" data-mode="url">Paste Link</button>
+            <button type="button" class="ad-toggle-btn" data-mode="upload">Upload PDF</button>
+          </div>
+        </div>
+        <div class="ad-form-group" id="doc-url-group">
           <label for="doc-url">PDF Document URL (Shopify / CDN link)</label>
-          <input type="url" id="doc-url" required placeholder="https://cdn.shopify.com/..." />
+          <input type="url" id="doc-url" placeholder="https://cdn.shopify.com/..." />
+        </div>
+        <div class="ad-form-group" id="doc-file-group" hidden>
+          <label for="doc-file">PDF File</label>
+          <input type="file" id="doc-file" accept="application/pdf,.pdf" />
+          <div class="ad-form-help">PDF files only, up to 20MB. Uploaded automatically when you save.</div>
         </div>
         <div class="ad-form-group">
           <label for="doc-section">Section / Year (optional)</label>
@@ -243,8 +255,20 @@
           <input type="text" id="edit-doc-title" required maxlength="300" />
         </div>
         <div class="ad-form-group">
+          <label>Document Source</label>
+          <div class="ad-toggle-group" id="edit-doc-mode-toggle" role="group" aria-label="Document source">
+            <button type="button" class="ad-toggle-btn active" data-mode="url">Paste Link</button>
+            <button type="button" class="ad-toggle-btn" data-mode="upload">Upload PDF</button>
+          </div>
+        </div>
+        <div class="ad-form-group" id="edit-doc-url-group">
           <label for="edit-doc-url">PDF Document URL</label>
-          <input type="url" id="edit-doc-url" required />
+          <input type="url" id="edit-doc-url" />
+        </div>
+        <div class="ad-form-group" id="edit-doc-file-group" hidden>
+          <label for="edit-doc-file">PDF File</label>
+          <input type="file" id="edit-doc-file" accept="application/pdf,.pdf" />
+          <div class="ad-form-help">PDF files only, up to 20MB. Replaces the current file when you save.</div>
         </div>
         <div class="ad-form-group">
           <label for="edit-doc-section">Section / Year (optional)</label>

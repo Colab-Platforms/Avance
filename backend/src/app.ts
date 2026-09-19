@@ -8,6 +8,7 @@ import authRoutes from "./modules/auth/auth.routes";
 import tabsRoutes from "./modules/tabs/tabs.routes";
 import sectionsRoutes from "./modules/tabs/sections.routes";
 import documentsRoutes from "./modules/documents/documents.routes";
+import uploadsRoutes from "./modules/uploads/uploads.routes";
 import publicRoutes from "./modules/public/public.routes";
 
 export function createApp() {
@@ -24,6 +25,7 @@ export function createApp() {
   app.use("/api/admin/tabs", tabsRoutes);
   app.use("/api/admin/sections", sectionsRoutes);
   app.use("/api/admin/documents", documentsRoutes);
+  app.use("/api/admin/uploads", uploadsRoutes);
   app.use("/api/public", publicRoutes);
 
   if (env.nodeEnv !== "production") {
