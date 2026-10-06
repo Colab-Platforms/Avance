@@ -399,6 +399,10 @@ function createDocumentRowElement(doc, sectionHeading) {
     document.getElementById("edit-doc-title").value = doc.title || "";
     document.getElementById("edit-doc-url").value = doc.url || "";
     document.getElementById("edit-doc-section").value = sectionHeading || "";
+    const currentSection = sectionHeading
+      ? currentTabDetail.sections.find((s) => s.heading === sectionHeading)
+      : null;
+    document.getElementById("edit-doc-section-order").value = currentSection ? currentSection.order : "";
     document.getElementById("edit-doc-order").value = doc.order !== undefined && doc.order !== null ? doc.order : 0;
     setDocMode("edit-doc", "url");
     openModal(modalEditDoc);
@@ -536,6 +540,23 @@ document.getElementById("delete-current-tab-btn").addEventListener("click", () =
 // Document Modals & Actions
 // =========================================================================
 
+// Auto-fill the "Group Order" field with an existing section's current order when its
+// heading is typed/selected, so admins see what they're changing before they change it.
+function wireSectionOrderAutofill(sectionInputId, sectionOrderInputId) {
+  const sectionInput = document.getElementById(sectionInputId);
+  const sectionOrderInput = document.getElementById(sectionOrderInputId);
+
+  sectionInput.addEventListener("input", () => {
+    if (!currentTabDetail) return;
+    const heading = sectionInput.value.trim();
+    const match = currentTabDetail.sections.find((s) => s.heading === heading);
+    sectionOrderInput.value = match ? match.order : "";
+  });
+}
+
+wireSectionOrderAutofill("doc-section", "doc-section-order");
+wireSectionOrderAutofill("edit-doc-section", "edit-doc-section-order");
+
 // Open Add Document Modal
 document.getElementById("open-add-doc-modal").addEventListener("click", () => {
   if (!activeTabId) {
@@ -555,6 +576,7 @@ document.getElementById("create-doc-form").addEventListener("submit", async (e) 
   const title = document.getElementById("doc-title").value.trim();
   const section = document.getElementById("doc-section").value.trim();
   const orderValue = document.getElementById("doc-order").value;
+  const sectionOrderValue = document.getElementById("doc-section-order").value;
 
   let url;
   try {
@@ -573,10 +595,18 @@ document.getElementById("create-doc-form").addEventListener("submit", async (e) 
   }
 
   try {
-    await apiFetch("/admin/documents", {
+    const created = await apiFetch("/admin/documents", {
       method: "POST",
       body: JSON.stringify(payload),
     });
+
+    if (sectionOrderValue !== "" && created.sectionId) {
+      await apiFetch(`/admin/sections/${created.sectionId}`, {
+        method: "PATCH",
+        body: JSON.stringify({ order: Number(sectionOrderValue) }),
+      });
+    }
+
     closeAllModals();
     await loadTabDetail(activeTabId);
     // Refresh sidebar tab count
@@ -597,6 +627,7 @@ document.getElementById("edit-doc-form").addEventListener("submit", async (e) =>
   const title = document.getElementById("edit-doc-title").value.trim();
   const section = document.getElementById("edit-doc-section").value.trim();
   const orderValue = document.getElementById("edit-doc-order").value;
+  const sectionOrderValue = document.getElementById("edit-doc-section-order").value;
 
   let url;
   try {
@@ -614,10 +645,18 @@ document.getElementById("edit-doc-form").addEventListener("submit", async (e) =>
   };
 
   try {
-    await apiFetch(`/admin/documents/${id}`, {
+    const updated = await apiFetch(`/admin/documents/${id}`, {
       method: "PATCH",
       body: JSON.stringify(payload),
     });
+
+    if (sectionOrderValue !== "" && updated.sectionId) {
+      await apiFetch(`/admin/sections/${updated.sectionId}`, {
+        method: "PATCH",
+        body: JSON.stringify({ order: Number(sectionOrderValue) }),
+      });
+    }
+
     closeAllModals();
     await loadTabDetail(activeTabId);
   } catch (err) {
