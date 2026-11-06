@@ -707,13 +707,30 @@
 				: `<div class="ir-empty-state">No documents match "${escapeHTML(searchEl.value.trim())}".</div>`;
 		}
 
-		sidebarEl.addEventListener('click', (e) => {
-			const btn = e.target.closest('.ir-sidebar-item');
-			if (!btn) return;
-			activeId = btn.dataset.id;
+		function setActiveId(id, { updateHash = true } = {}) {
+			activeId = id;
+			if (updateHash) {
+				const newHash = `#${encodeURIComponent(id)}`;
+				if (window.location.hash !== newHash) {
+					history.pushState(null, '', newHash);
+				}
+			}
 			searchEl.value = '';
 			renderSidebar();
 			renderContent();
+		}
+
+		sidebarEl.addEventListener('click', (e) => {
+			const btn = e.target.closest('.ir-sidebar-item');
+			if (!btn) return;
+			setActiveId(btn.dataset.id);
+		});
+
+		window.addEventListener('hashchange', () => {
+			const id = decodeURIComponent(window.location.hash.slice(1));
+			if (id && investorData.some((item) => item.id === id)) {
+				setActiveId(id, { updateHash: false });
+			}
 		});
 
 		searchEl.addEventListener('input', renderContent);
@@ -727,7 +744,10 @@
 			return;
 		}
 
-		if (investorData.length) {
+		const hashId = decodeURIComponent(window.location.hash.slice(1));
+		if (hashId && investorData.some((item) => item.id === hashId)) {
+			activeId = hashId;
+		} else if (investorData.length) {
 			activeId = investorData[0].id;
 		}
 
